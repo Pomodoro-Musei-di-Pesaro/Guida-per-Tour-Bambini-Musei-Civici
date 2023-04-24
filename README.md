@@ -11,5 +11,4 @@ This work is licensed under a
 
 
 # Guida per il tour dei bambini presso i musei Civici di Pesaro.
-Guida per spiegare le Opere dei Musei Civici ai Bambini 
-Ai bambini bravi :)
+Guida per spiegare le Opere dei Musei Civici ai Bambini.
