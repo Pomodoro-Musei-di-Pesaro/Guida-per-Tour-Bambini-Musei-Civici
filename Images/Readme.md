@@ -3,10 +3,10 @@
 ### [Pala di Pesaro.](https://commons.wikimedia.org/wiki/File:Pala_di_pesaro_01.jpg)  
 License: Public Domain.  
 
-##### [Pala di Pesaro - Inconorazione della Vergine.](https://commons.wikimedia.org/wiki/File:Pala_di_pesaro_02.jpg)  
+### [Pala di Pesaro - Inconorazione della Vergine.](https://commons.wikimedia.org/wiki/File:Pala_di_pesaro_02.jpg)  
 License: Public Domain.  
 
-##### [Pala di Pesaro - S. Giorgio e il Drago.](https://commons.wikimedia.org/wiki/File:Bellini,_pala_di_pesaro_03_predella.JPG?uselang=it)  
+### [Pala di Pesaro - S. Giorgio e il Drago.](https://commons.wikimedia.org/wiki/File:Bellini,_pala_di_pesaro_03_predella.JPG?uselang=it)  
 License: [Creative Commons, Attribution-Share Alike 3.0 Unported.](https://creativecommons.org/licenses/by-sa/3.0/deed.en)  
 Author: [Sailko](https://commons.wikimedia.org/wiki/User:Sailko)  
 
