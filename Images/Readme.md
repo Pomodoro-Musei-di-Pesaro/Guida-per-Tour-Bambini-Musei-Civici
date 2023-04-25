@@ -42,3 +42,13 @@ License: [Attribution 4.0 International.](https://creativecommons.org/licenses/b
 
 ### [Fiori, frutta e un vassoio con calici di vetro](https://pesaromusei.it/news/grand-tour-cultura/)  
 License: Without License.
+
+---
+
+### [Dispensa con dolci, uova, salame, formaggi, ghiacciaia e canestro di limoni](http://www.comune.pesaro.pu.it/cultura/dettaglio/news/pasqua-un-weekend-ricco-tra-arte-e-storia/?tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=4b0d3d65303cf0ce3551bcf7fbe8b58e)  
+License: Without License.
+
+---
+
+### [Morte di Adone](https://www.romasette.it/ovidio-amori-miti-e-altre-storie/ovidio-gessi-morte-di-adone-pesaro-civici/)  
+License: Without License.
