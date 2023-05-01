@@ -1,5 +1,10 @@
 # Images & Licenses list
 
+### [Medusa.](https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/1100273581)
+License: [Attribution 4.0 International.](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+---
+
 ### [Pala di Pesaro.](https://commons.wikimedia.org/wiki/File:Pala_di_pesaro_01.jpg)  
 License: Public Domain.  
 
@@ -16,29 +21,55 @@ Author: [Sailko](https://commons.wikimedia.org/wiki/User:Sailko)
 
 ---
 
+### [Sant'Ambrogio.](https://www.fondazionerossini.com/collezione-hercolani/#)
+License: Without License.
+
+---
+
 ### [Rebeca y Eleazar.](https://commons.wikimedia.org/wiki/File:Pietro_Desani_Rebeca_y_Eleazar.jpg)  
 License: Public Domain.  
 
 ---
-<!-- Add here the ceramic plate with the black squirrel -->
 
-<!-- Add here the mirror of Murano -->
+### Piatto con scoiattolo.
+License: Image self-produced, no copyright infringement intended.
 
-<!-- Add here the night clock -->
+---
+
+### Specchio di Murano.
+License: Image self-produced, no copyright infringement intended.
+
+---
+
+### Orologio notturno.
+License: Image self-produced, no copyright infringement intended.
+
+---
 
 ### [Vedute di Roma.](https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/1100205495)  
 License: [Attribution 4.0 International.](https://creativecommons.org/licenses/by/4.0/legalcode)  
 
 ---
-<!-- Add here ivory and mother-of-pearl objects -->
+
+### Oggetti in avorio e madreperla.
+License: Image self-produced, no copyright infringement intended.
+
+---
 
 ### [Piatto - bottega pesarese.](https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/1100273589)  
 License: [Attribution 4.0 International.](https://creativecommons.org/licenses/by/4.0/legalcode)  
 
 ---
-<!-- Add here the first Trompe l'oeil -->
 
-<!-- Add here the second Trompe l'oeil -->
+### Trompe l'oeil con savoiardi.
+License: Image self-produced, no copyright infringement intended.
+
+---
+
+### Trompe l'oeil con pipa.
+License: Image self-produced, no copyright infringement intended.
+
+---
 
 ### [Fiori, frutta e un vassoio con calici di vetro](https://pesaromusei.it/news/grand-tour-cultura/)  
 License: Without License.
