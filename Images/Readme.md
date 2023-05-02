@@ -10,7 +10,7 @@ License: Public Domain.
 
 ---
 
-### [Pala di Pesaro - Inconorazione della Vergine.](https://commons.wikimedia.org/wiki/File:Pala_di_pesaro_02.jpg)  
+### [Pala di Pesaro - Incoronazione della Vergine.](https://commons.wikimedia.org/wiki/File:Pala_di_pesaro_02.jpg)  
 License: Public Domain.  
 
 ---
@@ -58,6 +58,11 @@ License: Image self-produced, no copyright infringement intended.
 
 ### [Piatto - bottega pesarese.](https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/1100273589)  
 License: [Attribution 4.0 International.](https://creativecommons.org/licenses/by/4.0/legalcode)  
+
+---
+
+### [Aureliano Milani - Il mercato](https://commons.wikimedia.org/wiki/File:Aureliano_Milani_El_Mercado.jpg)
+License: Public Domain.  
 
 ---
 
