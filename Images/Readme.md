@@ -1,90 +1,86 @@
 # Images & Licenses list
 
-### [Medusa.](https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/1100273581)
-License: [Attribution 4.0 International.](https://creativecommons.org/licenses/by/4.0/legalcode)
+### [Mengaroni Ferruccio - Medusa](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
 
 ---
 
-### [Pala di Pesaro.](https://commons.wikimedia.org/wiki/File:Pala_di_pesaro_01.jpg)  
-License: Public Domain.  
+### [Bellini Giovanni - Incoronazione della Vergine](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
+
+> ### [Detail: Incoronazione della Vergine.](https://commons.wikimedia.org/wiki/File:Pala_di_pesaro_02.jpg) 
+> License: Public Domain 
+
+> ### [Detail: S. Giorgio e il Drago.](https://commons.wikimedia.org/wiki/File:Bellini,_pala_di_pesaro_03_predella.JPG?uselang=it) 
+> License: [Creative Commons, Attribution-Share Alike 3.0 Unported.](https://creativecommons.org/licenses/by-sa/3.0/deed.en)
+>Author: [Sailko](https://commons.wikimedia.org/wiki/User:Sailko)
 
 ---
 
-### [Pala di Pesaro - Incoronazione della Vergine.](https://commons.wikimedia.org/wiki/File:Pala_di_pesaro_02.jpg)  
-License: Public Domain.  
+### [Vitale da Bologna - Santo Ambrogio in trono](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
 
 ---
 
-### [Pala di Pesaro - S. Giorgio e il Drago.](https://commons.wikimedia.org/wiki/File:Bellini,_pala_di_pesaro_03_predella.JPG?uselang=it)  
-License: [Creative Commons, Attribution-Share Alike 3.0 Unported.](https://creativecommons.org/licenses/by-sa/3.0/deed.en)  
-Author: [Sailko](https://commons.wikimedia.org/wiki/User:Sailko)  
+### [Desani Pietro - Rebecca ed Eleazar](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
 
 ---
 
-### [Sant'Ambrogio.](https://www.fondazionerossini.com/collezione-hercolani/#)
-License: Without License.
+### [Pittore della Conversione di San Paolo - Leda e il cigno](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
 
 ---
 
-### [Rebeca y Eleazar.](https://commons.wikimedia.org/wiki/File:Pietro_Desani_Rebeca_y_Eleazar.jpg)  
-License: Public Domain.  
+### [Specchio di Murano](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
 
 ---
 
-### Piatto con scoiattolo.
+### [Orologio notturno](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
+
+---
+
+### [Vedute di Roma](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
+
+---
+
+### Oggetti in avorio e madreperla
 License: Image self-produced, no copyright infringement intended.
 
 ---
 
-### Specchio di Murano.
-License: Image self-produced, no copyright infringement intended.
+### [Scacciani Antonio - Vassoio - Rosa](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
 
 ---
 
-### Orologio notturno.
-License: Image self-produced, no copyright infringement intended.
+### [Milani Aureliano - Mercato](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
 
 ---
 
-### [Vedute di Roma.](https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/1100205495)  
-License: [Attribution 4.0 International.](https://creativecommons.org/licenses/by/4.0/legalcode)  
+### [Gianlisi Antonio Junior - Trompe l'oeil con sonetto in onore di Eugenio di Savoia e mensola con oggetti](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
 
 ---
 
-### Oggetti in avorio e madreperla.
-License: Image self-produced, no copyright infringement intended.
+### [Gianlisi Antonio Junior - Trompe l'oeil con paesaggio forbici e mensola con oggetti.jpg](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
 
 ---
 
-### [Piatto - bottega pesarese.](https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/1100273589)  
-License: [Attribution 4.0 International.](https://creativecommons.org/licenses/by/4.0/legalcode)  
+### [Berentz Christian - Fiori e frutta con bicchieri di cristallo](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
 
 ---
 
-### [Aureliano Milani - Il mercato](https://commons.wikimedia.org/wiki/File:Aureliano_Milani_El_Mercado.jpg)
-License: Public Domain.  
+### [Realfonzo Tommaso - Natura morta con dolci frutta uova e formaggi](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
 
 ---
 
-### Trompe l'oeil con savoiardi.
-License: Image self-produced, no copyright infringement intended.
-
----
-
-### Trompe l'oeil con pipa.
-License: Image self-produced, no copyright infringement intended.
-
----
-
-### [Fiori, frutta e un vassoio con calici di vetro](https://pesaromusei.it/news/grand-tour-cultura/)  
-License: Without License.
-
----
-
-### [Dispensa con dolci, uova, salame, formaggi, ghiacciaia e canestro di limoni](http://www.comune.pesaro.pu.it/cultura/dettaglio/news/pasqua-un-weekend-ricco-tra-arte-e-storia/?tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=4b0d3d65303cf0ce3551bcf7fbe8b58e)  
-License: Without License.
-
----
-
-### [Morte di Adone](https://www.romasette.it/ovidio-amori-miti-e-altre-storie/ovidio-gessi-morte-di-adone-pesaro-civici/)  
-License: Without License.
+### [Gessi Giovan Francesco - Morte di Adone](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
+License: © Comune di Pesaro
