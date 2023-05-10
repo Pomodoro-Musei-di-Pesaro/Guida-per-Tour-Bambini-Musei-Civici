@@ -34,6 +34,66 @@
 	\usebeamerfont*{frametitle}%
 }
 
+%Command to zoom in
+\usepackage{mwe}
+\makeatletter
+\newsavebox\zb@x
+\newcounter{z@@m}
+\usepackage{calc}
+\newdimen\B@r\newdimen\P@r
+\newdimen\@zw\newdimen\@zh\newdimen\@zd
+
+\newcommand{\zoombox}[2][0]{%
+	\leavevmode%
+	\sbox\zb@x{#2}%
+	\setlength\B@r{1pt*\ratio{\wd\zb@x}{\ht\zb@x+\dp\zb@x}}%
+	\setlength\P@r{1pt*\ratio{\paperwidth}{\paperheight}}%
+	\ifdim\B@r>\P@r\relax%
+	\setlength\@zw{\wd\zb@x}\setlength\@zh{\@zw*\ratio{\paperheight}{\paperwidth}}%
+	\setlength\@zd{(\@zh-\ht\zb@x-\dp\zb@x)*\real{0.5}+\dp\zb@x}%
+	\setlength\@zh{\@zh-\@zd}%
+	\else%
+	\setlength\@zh{\ht\zb@x+\dp\zb@x}%
+	\setlength\@zw{\@zh*\ratio{\paperwidth}{\paperheight}}%
+	\setlength\@zh{\ht\zb@x}\setlength\@zd{\dp\zb@x}%
+	\fi%
+	\makebox[0pt][l]{\makebox[\wd\zb@x][c]{\makebox[\@zw][l]{%
+				\pdfdest name {zbfs\thez@@m} fitr
+				width  \@zw\space
+				height \@zh\space
+				depth  \@zd\space
+	}}}%
+	\pdfdest name {zb\thez@@m} fitr
+	width  \wd\zb@x\space
+	height \ht\zb@x\space
+	depth  \dp\zb@x\space
+	\immediate\pdfannot 
+	width  \wd\zb@x\space
+	height \ht\zb@x\space
+	depth  \dp\zb@x\space
+	{%
+		/Subtype/Link/H/N
+		/Border [0 0 #1 [1 2]]
+		/A <<
+		/S/JavaScript
+		/JS (
+		if(typeof(zoomed)=='undefined'||!zoomed){
+			var lastView=this.viewState;
+			if(app.fs.isFullScreen) this.gotoNamedDest('zbfs\thez@@m');
+			else this.gotoNamedDest('zb\thez@@m');
+			zoomed=true;
+		}else{
+			this.viewState=lastView;
+			zoomed=false;
+		}
+		)
+		>>
+	}%
+	\usebox{\zb@x}%
+	\stepcounter{z@@m}%
+} 
+\makeatother
+
 
 %Header
 \title[Tour guidato per bambini ai Musei Civici]{\textbf{Manuale per operatori.\\Tour guidato per bambini ai Musei Civici.}}
@@ -71,7 +131,7 @@
 			\item 	Mostrare la Medusa di Ferruccio Mengaroni, situata accanto allo scalone d'ingresso ai Musei sulla sinistra, raccontando della maledizione legata all'imponente opera ceramica.\par \bigskip
 			\begin{minipage}{\linewidth}
 				\centering
-				\includegraphics[]{Mengaroni_Ferruccio-Medusa.jpg}
+					\zoombox{\includegraphics[]{Mengaroni_Ferruccio-Medusa.jpg}}
 				\captionof{figure}{Mengaroni Ferruccio - Medusa.}
 			\end{minipage}
 		\end{itemize}
@@ -87,7 +147,7 @@
 		\bigskip
 			\begin{minipage}{\linewidth}
 			\centering
-			\includegraphics[scale=0.063]{Bellini_Giovanni-Incoronazione_della_Vergine.jpg}
+			\zoombox{\includegraphics[scale=0.063]{Bellini_Giovanni-Incoronazione_della_Vergine.jpg}}
 			\captionof{figure}{Bellini Giovanni - Incoronazione della Vergine.}
 		\end{minipage}
 	\end{frame}
@@ -96,12 +156,12 @@
 		\begin{minipage}{\linewidth}
 			\centering
 			\begin{minipage}{0.4\linewidth}
-				\includegraphics[scale=0.65]{Pala_di_pesaro_incoronazione.jpg}
+				\zoombox{\includegraphics[scale=0.65]{Pala_di_pesaro_incoronazione.jpg}}
 				\captionof{figure}{Dettaglio: Incoronazione della Vergine.}
 			\end{minipage}
 			\hfill
 			\begin{minipage}{0.4\linewidth}
-				\includegraphics[scale=0.1]{Pala_di_Pesaro_S.Giorgio_e_il_Drago.jpg}
+				\zoombox{\includegraphics[scale=0.1]{Pala_di_Pesaro_S.Giorgio_e_il_Drago.jpg}}
 				\captionof{figure}{Dettaglio: S. Giorgio e il Drago.}
 			\end{minipage}
 		\end{minipage}
@@ -117,7 +177,7 @@
 		\bigskip
 		\begin{minipage}{\linewidth}
 			\centering
-			\includegraphics[scale=0.043]{Vitale_da_Bologna-Santo_Ambrogio_in_trono.jpg}
+			\zoombox{\includegraphics[scale=0.043]{Vitale_da_Bologna-Santo_Ambrogio_in_trono.jpg}}
 			\captionof{figure}{Vitale da Bologna - Santo Ambrogio in trono. \\ \centering Esempio di quadro senza prospettiva.}
 		\end{minipage} 
 	\end{frame}
@@ -127,7 +187,7 @@
 			\item Spiegare gli elementi che contraddistinguono la \textbf{Collezione Rossini}; come il \textit{Rosso vermiglio} e \textit{l'oro ed i gioielli} nei dipinti.\par \bigskip
 			\begin{minipage}{\linewidth}
 				\centering
-				\includegraphics[scale = 0.042]{Desani_Pietro-Rebecca_ed_Eleazar.jpg}
+				\zoombox{\includegraphics[scale = 0.042]{Desani_Pietro-Rebecca_ed_Eleazar.jpg}}
 				\captionof{figure}{Desani Pietro - Rebecca ed Eleazar.}
 			\end{minipage}
 		\end{itemize}
@@ -138,7 +198,7 @@
 			\item Mostrare la \textbf{ceramica della collezione Mazza} dove è presente lo \textit{scoiattolo nero di cinquecento anni fa}.\par \bigskip
 			\begin{minipage}{\linewidth}
 				\centering
-				\includegraphics[]{Pittore_della_Conversione_di_San_Paolo-Leda_e_il_cigno.jpg}
+				\zoombox{\includegraphics[]{Pittore_della_Conversione_di_San_Paolo-Leda_e_il_cigno.jpg}}
 				\captionof{figure}{Leda e il Cigno (Giove) di fattura ad opera di Giovanni Antonio Garella.}
 			\end{minipage}
 		\end{itemize}
@@ -155,12 +215,12 @@
 		\begin{minipage}{\linewidth}
 			\centering
 			\begin{minipage}{0.4\linewidth}
-				\includegraphics[scale=0.23]{Specchio_di_Murano.jpg}
+				\zoombox{\includegraphics[scale=0.23]{Specchio_di_Murano.jpg}}
 				\captionof{figure}{Specchio in vetro di Murano.}
 			\end{minipage}
 			\hfill
 			\begin{minipage}{0.4\linewidth}
-				\includegraphics[scale=1.45]{Avorio_madreperla.jpg}
+				\zoombox{\includegraphics[scale=1.45]{Avorio_madreperla.jpg}}
 				\captionof{figure}{Oggetti in avorio e madreperla.}
 			\end{minipage}
 		\end{minipage}
@@ -171,12 +231,12 @@
 		\begin{minipage}{\linewidth}
 			\centering
 			\begin{minipage}{0.4\linewidth}
-				\includegraphics[scale=0.4]{Vedute_di_Roma_1.jpg}
+				\zoombox{\includegraphics[scale=0.4]{Vedute_di_Roma_1.jpg}}
 				\captionof{figure}{Vedute di Roma.}
 			\end{minipage}
 			\hfill
 			\begin{minipage}{0.4\linewidth}
-				\includegraphics[scale=0.2]{Orologio_notturno.jpg}
+				\zoombox{\includegraphics[scale=0.2]{Orologio_notturno.jpg}}
 				\captionof{figure}{Orologio notturno.}
 			\end{minipage}
 		\end{minipage}
@@ -187,7 +247,7 @@
 			\item Mostrare il \textbf{Piatto della bottega pesarese} con \textit{decoro della Rosa di Pesaro}.\par \bigskip
 			\begin{minipage}{\linewidth}
 				\centering
-				\includegraphics[scale=0.8]{Scacciani_Antonio-Vassoio-Rosa.jpg}
+				\zoombox{\includegraphics[scale=0.8]{Scacciani_Antonio-Vassoio-Rosa.jpg}}
 				\captionof{figure}{Scacciani Antonio - Vassoio - Rosa.}
 			\end{minipage}
 		\end{itemize}
@@ -204,7 +264,7 @@
 		\bigskip
 		\begin{minipage}{\linewidth}
 			\centering
-			\includegraphics[scale=0.045]{Milani_Aureliano-Mercato.jpg}
+			\zoombox{\includegraphics[scale=0.045]{Milani_Aureliano-Mercato.jpg}}
 			\captionof{figure}{Milani Aureliano - Mercato.}
 		\end{minipage}
 	\end{frame}
@@ -219,7 +279,7 @@
 		\bigskip
 		\begin{minipage}{\linewidth}
 			\centering
-			\includegraphics[scale= 0.06]{Berentz_Christian-Fiori_e_frutta_con_bicchieri_di_cristallo.jpg}
+			\zoombox{\includegraphics[scale= 0.06]{Berentz_Christian-Fiori_e_frutta_con_bicchieri_di_cristallo.jpg}}
 			\captionof{figure}{Berentz Christian - Fiori e frutta con bicchieri di cristallo.}
 		\end{minipage}
 	\end{frame}
@@ -229,12 +289,12 @@
 	\begin{minipage}{\linewidth}
 		\centering
 		\begin{minipage}[t]{0.4\linewidth}
-			\includegraphics[scale=0.057]{Gianlisi_Antonio_Junior-Trompe_l_oeil_con_sonetto_in_onore_di_Eugenio_di_Savoia_e_mensola_con_oggetti.jpg}
+			\zoombox{\includegraphics[scale=0.057]{Gianlisi_Antonio_Junior-Trompe_l_oeil_con_sonetto_in_onore_di_Eugenio_di_Savoia_e_mensola_con_oggetti.jpg}}
 			\captionof{figure}{Gianlisi Antonio Junior - Trompe l'oeil con sonetto in onore di Eugenio di Savoia e mensola con oggetti.}
 		\end{minipage}
 		\hfill
 		\begin{minipage}[t]{0.4\linewidth}
-			\includegraphics[scale=0.057]{Gianlisi_Antonio_Junior-Trompe_l_oeil_con_paesaggio_forbici_e_mensola_con_oggetti.jpg}
+			\zoombox{\includegraphics[scale=0.057]{Gianlisi_Antonio_Junior-Trompe_l_oeil_con_paesaggio_forbici_e_mensola_con_oggetti.jpg}}
 			\captionof{figure}{Gianlisi Antonio Junior - Trompe l'oeil con paesaggio forbici e mensola con oggetti.}
 		\end{minipage}
 	\end{minipage}
@@ -251,12 +311,12 @@
 		\begin{minipage}{\linewidth}
 			\centering
 			\begin{minipage}[t]{0.4\linewidth}
-			\includegraphics[scale=0.6]{Realfonzo_Tommaso-Natura_morta_con_dolci_frutta_uova_e_formaggi.jpg}
+			\zoombox{\includegraphics[scale=0.6]{Realfonzo_Tommaso-Natura_morta_con_dolci_frutta_uova_e_formaggi.jpg}}
 			\captionof{figure}{Realfonzo Tommaso - Natura morta con dolci frutta uova e formaggi.}
 			\end{minipage}
 			\hfill
 			\begin{minipage}[t]{0.5\linewidth}
-				\includegraphics[scale=0.045]{Gessi_Giovan_Francesco-Morte_di_Adone.jpg}
+				\zoombox{\includegraphics[scale=0.045]{Gessi_Giovan_Francesco-Morte_di_Adone.jpg}}
 				\captionof{figure}{Gessi Giovan Francesco - Morte di Adone.}
 			\end{minipage}
 		\end{minipage}
