@@ -276,3 +276,5 @@ TSWLatexianTemp*
 *.lpz
 .DS_Store
 *.pdf
+Guide/\jobname.zom.tex
+Guide/Guided_Tour_For_Children.zom
