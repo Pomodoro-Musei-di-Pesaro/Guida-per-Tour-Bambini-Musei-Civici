@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[hidelinks,aspectratio=169]{beamer}
 \usepackage[italian]{babel} 
 \usepackage[utf8]{inputenc} 
 \usepackage{fourier} 
@@ -20,6 +20,13 @@
 
 % Stop hyphenation
 \usepackage[none]{hyphenat}
+
+% License
+\usepackage[
+	type={CC},
+	modifier={by-nc-sa},
+	version={4.0},
+]{doclicense}
 
 % Command to enumerate frames title
 \newcommand{\numcirc}[1]{%
@@ -326,6 +333,10 @@
 		\begin{itemize}
 			\item \textbf{Per eventuali laboratori creativi con bambini gli può essere fornito un dettaglio dell'opera per poi far sì che vadano a ricercare essa all'interno del museo.}
 		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\doclicenseThis
 	\end{frame}
 	
 \end{document}
