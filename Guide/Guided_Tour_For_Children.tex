@@ -16,6 +16,14 @@
 % Stop hyphenation
 \usepackage[none]{hyphenat}
 
+% License
+\usepackage[hidelinks]{hyperref}
+\usepackage[
+	type={CC},
+	modifier={by-nc-sa},
+	version={4.0},
+]{doclicense}
+
 %Command to zoom in --- This isn't the right algorithm to do that.
 \usepackage{mwe}
 \makeatletter
@@ -246,5 +254,8 @@
 	\end{enumerate}
 \newpage
 \listoffigures
+
+\bigspace
+\doclicenseThis
 
 \end{document}
