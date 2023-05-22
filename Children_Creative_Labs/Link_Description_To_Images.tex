@@ -1,0 +1,50 @@
+\documentclass[hidelinks,12pt,a4paper]{article}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier} 
+
+% Images
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\graphicspath{ {../Images} }
+
+% Stop hyphenation
+\usepackage[none]{hyphenat}
+
+% Dotted frame.
+\usepackage{tikz}
+
+% License
+\usepackage[
+type={CC},
+modifier={by-nc-sa},
+version={4.0},
+]{doclicense}
+
+\begin{document}
+	
+	\title{\textbf{\centering{Laboratorio creativo per bambini.}\\Collega le immagini alla descrizione.}}
+	\author{Alice Balestieri}
+	\date{}
+	
+	\maketitle
+	\newpage
+	
+%-------- Starting images & descriptions section --------
+	\begin{figure}[h]
+			\centering
+			\begin{tikzpicture}
+				\node[draw,dashed]
+				{
+					\fboxrule=4pt			
+					\fcolorbox{white}{white}{\includegraphics[scale=1.5]{Mengaroni_Ferruccio-Medusa.jpg}}
+				};
+			\end{tikzpicture}
+	\end{figure}
+		
+		
+	
+	
+\end{document}
