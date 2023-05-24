@@ -16,6 +16,8 @@
 % Dotted frame.
 \usepackage{tikz}
 
+\usepackage{changepage}
+
 % License
 \usepackage[
 type={CC},
@@ -73,8 +75,6 @@ version={4.0},
 			\end{tikzpicture}
 	\end{figure}
 
-	\addvspace{10mm}
-
 	\begin{minipage}{\linewidth}
 		\centering
 		\begin{tikzpicture}
@@ -90,9 +90,38 @@ version={4.0},
 					}
 				};
 		\end{tikzpicture}
-		
 	\end{minipage}
+
+	\newpage
 	
+		\begin{figure}[h]
+		\centering
+		\begin{tikzpicture}
+			\node[draw,dashed]
+			{
+				\fboxrule=4pt			
+				\fcolorbox{white}{white}{\includegraphics[scale=0.1]{Bellini_Giovanni-Incoronazione_della_Vergine.jpg}}
+			};
+		\end{tikzpicture}
+	\end{figure}
+	
+	\begin{adjustwidth}{-30mm}{0mm}
+		\begin{tikzpicture}
+			\node[draw,dashed]
+			{
+				\fboxrule=4pt
+				\fcolorbox{white}{white}{
+					\fbox{
+						\begin{minipage}{180mm}
+							La pala è composta di un pannello centrale incorniciato entro un riquadro con ornati fitomorfi a girali. Sopra il pannello è collocato un architrave a girali lignei in rilievo. Di fianco sono due paraste suddivise in quattro scomparti con Santi e sormontati da due peducci. In basso la predella è divisa in cinque riquadri centrali e due ai lati. Il pannello centrale raffigura l'Incoronazione della Vergine, alla quale Cristo assiso in un trono colloca la corona sul capo. Ai lati delle due figure principali sono rappresentati in piedi i santi Paolo e Pietro, Girolamo e Francesco. Dietro Cristo e la Madonna è raffigurato un castello incorniciato dall'alzata del trono mirabilmente intarsiata e decorata a rilievi. In alto tra le nubi sono rappresentati cherubini e la colomba dello Spirito Santo. I santi rappresentati sulle paraste sono i seguenti da sinistra a destra e dall'alto in basso: la Santa Caterina, S. Lorenzo, S. Antonio da Padova, S. Giovanni Battista, la Beata Michelina, S. Bernardino da Siena, S. Ludovico da Tolosa e S. Andrea. Nella predella sono raffigurati ai lati: S. Giorgio che libera la principessa dal drago, e S. Terenzio, patrono di Pesaro; al centro S. Paolo che cade da cavallo, la Crocefissione di S. Pietro, la Natività, S. Girolamo nel deserto e S. Francesco stigmatizzato. 
+						\end{minipage}
+					}
+				}
+			};
+		\end{tikzpicture}
+	\end{adjustwidth}
+
+	\newpage
 		
 		
 	
