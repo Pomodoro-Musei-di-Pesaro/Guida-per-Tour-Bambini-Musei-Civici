@@ -18,4 +18,3 @@ Guida per spiegare le Opere dei Musei Civici ai Bambini.
 # To-Do
 - Revisione testo nella guida.
 - Revisione testo nelle slides della guida.
-- Creazione di un documento per un laboratorio creativo per i bambini.
