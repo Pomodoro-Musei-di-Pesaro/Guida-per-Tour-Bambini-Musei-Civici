@@ -74,6 +74,7 @@ version={4.0},
 	%---------- Begin page ----------
 	
 	\begin{adjustwidth}{-30mm}{-30mm}
+		% Rule [trim={left bottom right top},clip]
 		
 		% Superior page
 		\begin{minipage}{\linewidth}
@@ -81,7 +82,7 @@ version={4.0},
 				\begin{minipage} [l] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
 					\medskip
 					\centering
-					\adjustbox{trim=0 {.5\height} {0.5\width} 0,clip}%
+					\adjustbox{trim=0 {0.5\height} {0.5\width} 0,clip}%
 					{\includegraphics[scale=2]{Mengaroni_Ferruccio-Medusa.jpg}}
 					
 					\vspace*{\fill}
@@ -93,7 +94,14 @@ version={4.0},
 			\hfill{
 				\fbox{
 					\begin{minipage} [r] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
-						bla bla bla
+						\medskip
+						\centering
+						\adjustbox{trim={0.5\width}  {0.5\height} 0 0,clip}%
+						{\includegraphics[scale=2]{Mengaroni_Ferruccio-Medusa.jpg}}
+						
+						\vspace*{\fill}
+						\fboxrule=4pt{
+							\framebox[\textwidth]{\rule{0pt}{55pt}}}
 					\end{minipage}
 				}
 			}
@@ -105,14 +113,28 @@ version={4.0},
 		\begin{minipage}{\linewidth}
 		\fbox{
 			\begin{minipage} [l] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
-				bla bla bla
+				\medskip
+				\centering
+				\adjustbox{trim=0 0 {0.5\width} {0.5\height},clip}%
+				{\includegraphics[scale=2]{Mengaroni_Ferruccio-Medusa.jpg}}
+				
+				\vspace*{\fill}
+				\fboxrule=4pt{
+				\framebox[\textwidth]{\rule{0pt}{55pt}}}
 			\end{minipage}
 		}%
 		%
 		\hfill{
 			\fbox{
 				\begin{minipage} [r] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
-					bla bla bla
+					\medskip
+					\centering
+					\adjustbox{trim={0.5\width} 0 0 {0.5\height},clip}%
+					{\includegraphics[scale=2]{Mengaroni_Ferruccio-Medusa.jpg}}
+					
+					\vspace*{\fill}
+					\fboxrule=4pt{
+						\framebox[\textwidth]{\rule{0pt}{55pt}}}
 				\end{minipage}
 			}
 		}
@@ -122,13 +144,14 @@ version={4.0},
 	
 	\vspace*{\fill}
 	\centering
-	\fboxrule=2pt
+	\fboxrule=2pt{
 	\fbox
 	{
 		\begin{minipage}{\linewidth}
-		Esempio di una didascalia che viene inserita in fondo alla pagina.
+			\centering
+		Mengaroni Ferruccio - Medusa.
 		\end{minipage}
-	}
+	}}
 	
 	%---------- End page ----------
 	\newpage
