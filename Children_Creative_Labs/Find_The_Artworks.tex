@@ -22,7 +22,6 @@
 % Adjust image dim.
 \usepackage{adjustbox}
 
-
 % License
 \usepackage[
 type={CC},
@@ -80,12 +79,17 @@ version={4.0},
 		\begin{minipage}{\linewidth}
 			\fbox{
 				\begin{minipage} [l] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
+					\medskip
 					\centering
 					\adjustbox{trim=0 {.5\height} {0.5\width} 0,clip}%
-					{\includegraphics[scale=1.5]{Mengaroni_Ferruccio-Medusa.jpg}}
+					{\includegraphics[scale=2]{Mengaroni_Ferruccio-Medusa.jpg}}
+					
+					\vspace*{\fill}
+					\fboxrule=4pt{
+					\framebox[\textwidth]{\rule{0pt}{55pt}}}
+					
 				\end{minipage}
 		}%
-	%
 			\hfill{
 				\fbox{
 					\begin{minipage} [r] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
@@ -127,4 +131,6 @@ version={4.0},
 	}
 	
 	%---------- End page ----------
+	\newpage
+	\framebox[\textwidth]{\rule{0pt}{30pt}}
 \end{document}	
