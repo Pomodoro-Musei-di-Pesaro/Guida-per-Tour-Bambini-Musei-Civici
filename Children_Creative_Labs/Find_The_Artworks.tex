@@ -16,8 +16,8 @@
 % Dotted frame.
 \usepackage{tikz}
 
-% For testing purpose
-\usepackage{microtype}
+% Adjust paragraph.
+\usepackage{changepage}
 
 % License
 \usepackage[
@@ -70,42 +70,45 @@ version={4.0},
 	
 	%---------- Begin page ----------
 	
-	%----- Mini page 1
-	\begin{minipage}{\linewidth}
+	\begin{adjustwidth}{-30mm}{-30mm}
 		
-	
-	\fbox{
-	\begin{minipage} [l] [\dimexpr 0.300\textwidth \relax] [t] {\dimexpr .495\textwidth \relax}
-		bla bla bla
-	\end{minipage}
-		
-	}
-	\hfill{
-	\fbox{
-		\begin{minipage} [r] [\dimexpr 0.300\textwidth \relax] [t] {\dimexpr .495\textwidth \relax}
-			bla bla bla
+		% Superior page
+		\begin{minipage}{\linewidth}
+			\fbox{
+				\begin{minipage} [l] [\dimexpr 0.300\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
+					bla bla bla
+				\end{minipage}
+		}%
+	%
+			\hfill{
+				\fbox{
+					\begin{minipage} [r] [\dimexpr 0.300\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
+						bla bla bla
+					\end{minipage}
+				}
+			}
 		\end{minipage}
-	}
-}
+	
+	\vspace{4mm}
+	
+	%--- Bottom page
+		\begin{minipage}{\linewidth}
+		\fbox{
+			\begin{minipage} [l] [\dimexpr 0.300\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
+				bla bla bla
+			\end{minipage}
+		}%
+		%
+		\hfill{
+			\fbox{
+				\begin{minipage} [r] [\dimexpr 0.300\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
+					bla bla bla
+				\end{minipage}
+			}
+		}
 	\end{minipage}
+	\end{adjustwidth}
 
-\begin{minipage}{\linewidth}
-	
-	
-	\fbox{
-		\begin{minipage} [l] [\dimexpr 0.300\textwidth \relax] [t] {\dimexpr .495\textwidth \relax}
-			bla bla bla
-		\end{minipage}
-		
-	}
-	\hfill{
-	\fbox{
-		\begin{minipage} [r] [\dimexpr 0.300\textwidth \relax] [t] {\dimexpr .495\textwidth \relax}
-			bla bla bla
-		\end{minipage}
-	}
-}
-\end{minipage}
 	
 	\vspace*{\fill}
 	\centering
