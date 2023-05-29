@@ -19,6 +19,10 @@
 % Adjust paragraph.
 \usepackage{changepage}
 
+% Adjust image dim.
+\usepackage{adjustbox}
+
+
 % License
 \usepackage[
 type={CC},
@@ -76,7 +80,9 @@ version={4.0},
 		\begin{minipage}{\linewidth}
 			\fbox{
 				\begin{minipage} [l] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
-					bla bla bla
+					\centering
+					\adjustbox{trim=0 {.5\height} {0.5\width} 0,clip}%
+					{\includegraphics[scale=1.5]{Mengaroni_Ferruccio-Medusa.jpg}}
 				\end{minipage}
 		}%
 	%
