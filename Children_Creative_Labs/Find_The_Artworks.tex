@@ -13,11 +13,11 @@
 % Stop hyphenation
 \usepackage[none]{hyphenat}
 
-% Dotted frame.
-\usepackage{tikz}
-
 % Adjust paragraph.
 \usepackage{changepage}
+
+% Write over image.
+\usepackage{tikz}
 
 % Adjust image dim.
 \usepackage{adjustbox}
@@ -69,6 +69,18 @@ version={4.0},
 	}
 
 	\newpage
+	\section{Gestione immagini nel documento}
+	
+	\begin{tikzpicture}
+		\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[scale=0.85]{example-image}};
+		\begin{scope}[x={(image.south east)},y={(image.north west)}]
+			\draw[help lines,xstep=.1,ystep=.1] (0,0) grid (1,1);
+			\foreach \x in {0,1,...,9} { \node [anchor=north] at (\x/10,0) {0.\x}; }
+			\foreach \y in {0,1,...,9} { \node [anchor=east] at (0,\y/10) {0.\y}; }
+		\end{scope}
+	\end{tikzpicture}
+
+	\newpage
 	\section{Immagini e didascalie}
 	
 	%---------- Begin page ----------
@@ -81,8 +93,12 @@ version={4.0},
 				\begin{minipage} [l] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
 					\medskip
 					\centering
-					\adjustbox{trim=0 {0.5\height} {0.5\width} 0,clip}%
-					{\includegraphics[scale=2]{Mengaroni_Ferruccio-Medusa.jpg}}
+					\begin{tikzpicture}
+						\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[]{Mengaroni_Ferruccio-Medusa.jpg}};
+						\begin{scope}[x={(image.south east)},y={(image.north west)}]
+							\draw[draw=none,fill=white] (0,0.5) rectangle (0.25,1);
+						\end{scope}
+					\end{tikzpicture}
 					
 					\vspace*{\fill}
 					\fboxrule=4pt{
