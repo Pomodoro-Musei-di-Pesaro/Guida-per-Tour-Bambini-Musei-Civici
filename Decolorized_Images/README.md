@@ -40,11 +40,6 @@ License: © Comune di Pesaro
 
 ---
 
-### Oggetti in avorio e madreperla
-License: Image self-produced, no copyright infringement intended.
-
----
-
 ### [Scacciani Antonio - Vassoio - Rosa](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
 License: © Comune di Pesaro
 
