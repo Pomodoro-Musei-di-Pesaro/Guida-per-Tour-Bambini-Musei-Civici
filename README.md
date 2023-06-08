@@ -16,5 +16,5 @@ Guida per spiegare le Opere dei Musei Civici ai Bambini.
 ---
 
 # To-Do
-- Revisione testo nella guida.
-- Revisione testo nelle slides della guida.
+- Revisione completa guida principale.
+- Revisione completa delle slides della guida.
