@@ -1,0 +1,274 @@
+\documentclass[hidelinks,12pt,a4paper]{article}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier} 
+
+% Images
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\graphicspath{ {../Images} }
+
+% FlowChart
+\usepackage{smartdiagram}
+
+% Stop hyphenation
+\usepackage[none]{hyphenat}
+
+% Justifying text
+\emergencystretch 3em
+
+% Enlarge section & subsection
+\usepackage{titlesec}
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+
+% License
+\usepackage[
+	type={CC},
+	modifier={by-nc-sa},
+	version={4.0},
+]{doclicense}
+
+%Command to zoom in --- This isn't the right algorithm to do that.
+\usepackage{mwe}
+\makeatletter
+\newsavebox\zb@x
+\newcounter{z@@m}
+\usepackage{calc}
+\newdimen\B@r\newdimen\P@r
+\newdimen\@zw\newdimen\@zh\newdimen\@zd
+
+\newcommand{\zoombox}[2][0]{%
+	\leavevmode%
+	\sbox\zb@x{#2}%
+	\setlength\B@r{1pt*\ratio{\wd\zb@x}{\ht\zb@x+\dp\zb@x}}%
+	\setlength\P@r{1pt*\ratio{\paperwidth}{\paperheight}}%
+	\ifdim\B@r>\P@r\relax%
+	\setlength\@zw{\wd\zb@x}\setlength\@zh{\@zw*\ratio{\paperheight}{\paperwidth}}%
+	\setlength\@zd{(\@zh-\ht\zb@x-\dp\zb@x)*\real{0.5}+\dp\zb@x}%
+	\setlength\@zh{\@zh-\@zd}%
+	\else%
+	\setlength\@zh{\ht\zb@x+\dp\zb@x}%
+	\setlength\@zw{\@zh*\ratio{\paperwidth}{\paperheight}}%
+	\setlength\@zh{\ht\zb@x}\setlength\@zd{\dp\zb@x}%
+	\fi%
+	\makebox[0pt][l]{\makebox[\wd\zb@x][c]{\makebox[\@zw][l]{%
+				\pdfdest name {zbfs\thez@@m} fitr
+				width  \@zw\space
+				height \@zh\space
+				depth  \@zd\space
+	}}}%
+	\pdfdest name {zb\thez@@m} fitr
+	width  \wd\zb@x\space
+	height \ht\zb@x\space
+	depth  \dp\zb@x\space
+	\immediate\pdfannot 
+	width  \wd\zb@x\space
+	height \ht\zb@x\space
+	depth  \dp\zb@x\space
+	{%
+		/Subtype/Link/H/N
+		/Border [0 0 #1 [1 2]]
+		/A <<
+		/S/JavaScript
+		/JS (
+		if(typeof(zoomed)=='undefined'||!zoomed){
+			var lastView=this.viewState;
+			if(app.fs.isFullScreen) this.gotoNamedDest('zbfs\thez@@m');
+			else this.gotoNamedDest('zb\thez@@m');
+			zoomed=true;
+		}else{
+			this.viewState=lastView;
+			zoomed=false;
+		}
+		)
+		>>
+	}%
+	\usebox{\zb@x}%
+	\stepcounter{z@@m}%
+} 
+\makeatother
+
+
+
+\begin{document}
+
+\title{\textbf{\centering{Manuale per operatori}\\Tour guidato per bambini ai Musei Civici}}
+\author{Alice Balestieri}
+\date{}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Schema posizionamento Opere all'interno del Museo}
+
+\begin{center}
+	\smartdiagramset{set color list={green!60!lime,red!80!black, blue!50!cyan, brown!80, violet!80}, back arrow disabled=true, module minimum width=10cm, module minimum height=1.5cm, module y sep=2.30, arrow line width=0.16cm, text width=8cm}
+	\smartdiagram[flow diagram]{Scalone ingresso opera ceramica:\\ \textbf{La Medusa di Ferruccio Mengaroni}, Sala Giovanni Bellini: \\ \textbf{Opere di natura Ecclesiastica e provenienti dalla collezione Rossini},
+		 Sala delle ceramiche collezione di Domenico Mazza: \\ \textbf{Piatto in ceramica con scoiattolo nero}, Sala arredi e sculture collezione Mosca, Sala natura e inganno}
+\end{center}
+
+\newpage
+
+\section{Che opere mostrare all'interno del museo}
+
+	%Enlarge text
+	\LARGE
+
+	\begin{enumerate}
+		
+	\item La Medusa di Ferruccio Mengaroni, situata accanto allo scalone d'ingresso ai musei sulla sinistra. Essa è una delle opere più iconiche dei Musei Civici,quest'opera si dice fosse avvolta da una temibile maledizione. L'imponente opera ceramica è stata ispirata in parte alle opere di Caravaggio, e al mito greco del mostro Medusa. L'artista realizzò l'opera prendendo come esempio la sua immagine in uno specchio che però ahimè si ruppe e da lì in avanti la sciagura si abbatté sull'artista. In occasione dell'esposizione della sua monumentale opera, essa infatti si sbilanciò durante il trasporto e l'artista temendo che si sarebbe rotta accorse a prenderla ma purtroppo venne schiacciato dal peso del suo stesso capolavoro. \par
+	\begin{minipage}{\linewidth}
+		\centering
+		\zoombox{\includegraphics[]{Mengaroni_Ferruccio-Medusa.jpg}}
+		\captionof{figure}{Mengaroni Ferruccio - Medusa.}
+	\end{minipage}
+	
+	\item  La \textbf{Pala Bellini} (presente nella sala Bellini)è un'altra delle opere più importanti del museo. Questa opera fu realizzata su commissione a Venezia  dall'artista Giovanni Bellini per essere esposta all'interno della Chiesa di S. Francesco a Pesaro e venne trasportata via mare divisa in parti e poi riassemblata in loco. Dare enfasi durante la spiegazione al dettaglio della \textit{Colomba} che rappresenta lo \textit{Spirito Santo}, presente nel pannello centrale contenente la scena dell'Incoronazione della Vergine che come sfondo ha alle sue spalle la celebre Rocca di Gradara,è altrettanto importante far notare il dettaglio del \textit{Drago di S. Giorgio e il Drago}, presente in basso tra i sette riquadri della predella.\par
+	\begin{minipage}{\linewidth}
+		\centering
+		\zoombox{\includegraphics[scale=0.1]{Bellini_Giovanni-Incoronazione_della_Vergine.jpg}}
+		\captionof{figure}{Bellini Giovanni - Incoronazione della Vergine.}
+	\end{minipage}
+	
+	\begin{minipage}{\linewidth}
+		\centering
+		\begin{minipage}{0.4\linewidth}
+			\zoombox{\includegraphics[scale=0.65]{Pala_di_pesaro_incoronazione.jpg}}
+			\captionof{figure}{\centering{Dettaglio: Incoronazione della Vergine.}}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\linewidth}
+			\zoombox{\includegraphics[scale=0.1]{Pala_di_Pesaro_S.Giorgio_e_il_Drago.jpg}}
+			\captionof{figure}{\centering{Dettaglio: S. Giorgio e il Drago.}}
+		\end{minipage}
+	\end{minipage}
+
+\newpage
+	
+	\item Mostrare quadri che fanno uso della prospettiva, confrontandoli con quelli che ne sono privi. \par
+	\begin{minipage}{\linewidth}
+		\centering
+		\zoombox{\includegraphics[scale=0.06]{Vitale_da_Bologna-Santo_Ambrogio_in_trono.jpg}}
+		\captionof{figure}{Vitale da Bologna - Santo Ambrogio in trono. \\ \centering {Esempio di quadro privo di prospettiva parte della \textbf{Collezione Rossini}}}.
+	\end{minipage} 
+	
+\newpage
+	
+	\item Spiegare gli elementi che contraddistinguono la scelta delle opere da parte di Rossini da annettere alla sua collezione. \textbf{Collezione Rossini}; come il \textit{Rosso vermiglio} e \textit{l'oro ed i gioielli} nei dipinti e ricordare ai visitatori che quello sfarzo era in realtà in contrasto con le sue umili origini e da lui apprezzate proprio per mostrare alle dame ed ai nobili dell'epoca dove con il suo talento era riuscito ad arrivare.\par
+	\begin{minipage}{\linewidth}
+		\centering
+		\zoombox{\includegraphics[scale = 0.05]{Desani_Pietro-Rebecca_ed_Eleazar.jpg}}
+		\captionof{figure}{Desani Pietro - Rebecca ed Eleazar.}
+	\end{minipage}
+	
+	\item Accompagnare i bambini alla scoperta delle opere ceramiche come l'opera di Leda e Il Cigno \textbf{ceramica della collezione Mazza} dove è presente lo \textit{scoiattolo di un'insolito colore nero come appariva cinquecento anni fa}.\par
+	\begin{minipage}{\linewidth}
+		\centering
+		\zoombox{\includegraphics[]{Pittore_della_Conversione_di_San_Paolo-Leda_e_il_cigno.jpg}}
+		\captionof{figure}{Leda e il Cigno (Giove) di fattura ad opera di Giovanni Antonio Garella}
+	\end{minipage}
+	
+\newpage
+	
+	\item Far visionare  il pregiato \textbf{specchio in vetro di Murano} decorato con \textit{incisioni d'uva d'argento},  gli \textbf{oggetti in avorio e madreperla}, lo \textbf{Stipo con vedute di Roma} facendo riferimento a come volessero essere una sorta di \textit{cartoline} di Roma da mostrare ai commensali e l'\textbf{Orologio Notturno} usato dalla marchesa Toschi Mosca per comprendere che ore fossero quando si svegliava in prda all'insonnia.\par
+	\begin{minipage}{\linewidth}
+		\centering
+		\begin{minipage}{0.4\linewidth}
+			\zoombox{\includegraphics[scale=0.2]{Specchio_di_Murano.jpg}}
+			\captionof{figure}{Specchio in vetro di Murano.}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\linewidth}
+			\zoombox{\includegraphics[scale=1.4]{Avorio_madreperla.jpg}}
+			\captionof{figure}{Oggetti in avorio e madreperla.}
+		\end{minipage}
+	\end{minipage}
+	
+	\begin{minipage}{\linewidth}
+		\centering
+		\begin{minipage}{0.4\linewidth}
+			\zoombox{\includegraphics[scale=0.35]{Vedute_di_Roma_1.jpg}}
+			\captionof{figure}{Vedute di Roma.}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.4\linewidth}
+			\zoombox{\includegraphics[scale=0.2]{Orologio_notturno.jpg}}
+			\captionof{figure}{\centering{Orologio notturno.}}
+		\end{minipage}
+	\end{minipage}
+	
+\newpage
+	
+	\item Mostrare il \textbf{Piatto della bottega pesarese} con \textit{decoro della Rosa di Pesaro}  il cui motivo decorativo è tipico della nostra zona.\par
+	\begin{minipage}{\linewidth}
+		\centering
+		\zoombox{\includegraphics[]{Scacciani_Antonio-Vassoio-Rosa.jpg}}
+		\captionof{figure}{Scacciani Antonio - Vassoio - Rosa.}
+	\end{minipage}
+	
+	\item  Descrivere il dipinto ad olio Il Mercato di Aureliano Milani, che rappresenta una scena di vita quotidiana all'interno di un piccolo borgo abitato, in cui sono visibili diversi ceti sociali e i loro relativi mestieri.\par
+	\begin{minipage}{\linewidth}
+		\centering
+		\zoombox{\includegraphics[scale=0.06]{Milani_Aureliano-Mercato.jpg}}
+		\captionof{figure}{Milani Aureliano - Mercato.}
+	\end{minipage}
+
+\newpage
+	
+	\item Far notare le \textbf{Nature Morte}, evidenziando la \textit{frutta} ed i \textit{calici in vetro} e come la loro abbondanza era anche accompagnata dall´ effimera precarietà della loro freschezza come lo è per la durata della giovinezza. Accompagnare successivamente i bambini davanti ai \textbf{Trompe l'oeil} con il \textit{Sonetto di Antonio Gianlisi Junior} e il \textbf{Trompe l'oeil} con la \textit{pipa} mettendo in risalto i cibi e gli oggetti di uso comune come la \textit{pipa} e i \textit{savoiardi} che alludono ai Savoia.\par
+	\begin{minipage}{\linewidth}
+		\centering
+		\zoombox{\includegraphics[scale= 0.1]{Berentz_Christian-Fiori_e_frutta_con_bicchieri_di_cristallo.jpg}}
+		\captionof{figure}{Berentz Christian - Fiori e frutta con bicchieri di cristallo.}
+	\end{minipage}
+	
+	\begin{minipage}{\linewidth}
+		\centering
+		\begin{minipage}[t]{0.4\linewidth}
+			\zoombox{\includegraphics[scale=0.08]{Gianlisi_Antonio_Junior-Trompe_l_oeil_con_sonetto_in_onore_di_Eugenio_di_Savoia_e_mensola_con_oggetti.jpg}}
+			\captionof{figure}{\centering{Gianlisi Antonio Junior - Trompe l'oeil con sonetto in onore di Eugenio di Savoia e mensola con oggetti.}}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.4\linewidth}
+			\zoombox{\includegraphics[scale=0.08]{Gianlisi_Antonio_Junior-Trompe_l_oeil_con_paesaggio_forbici_e_mensola_con_oggetti.jpg}}
+			\captionof{figure}{\centering{Gianlisi Antonio Junior - Trompe l'oeil con paesaggio forbici e mensola con oggetti.}}
+		\end{minipage}
+	\end{minipage}
+	
+\newpage
+	
+	\item Indicare ai piccoli i dipinti contenenti particolari che possono attirare la loro attenzione,come per esempio \textit{le uova, i salami ed i limoni} nel dipinto \textbf{Dispensa con dolci, uova, salame, formaggi, ghiacciata e canestro di limoni} oppure il dettaglio del \textit{cinghiale} presente nella \textbf{Morte di Adone} piccolo dettaglio che ci svela come sia tragicamente morto durante la caccia.\par
+	\begin{minipage}{\linewidth}
+		\centering
+		\begin{minipage}[t]{0.4\linewidth}
+			\zoombox{\includegraphics[scale=0.6]{Realfonzo_Tommaso-Natura_morta_con_dolci_frutta_uova_e_formaggi.jpg}}
+			\captionof{figure}{\centering{Realfonzo Tommaso - Natura morta con dolci frutta uova e formaggi.}}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t] {0.4\linewidth}
+			\zoombox{\includegraphics[scale=0.05]{Gessi_Giovan_Francesco-Morte_di_Adone.jpg}}
+			\captionof{figure}{\centering{Gessi Giovan Francesco - Morte di Adone.}}
+		\end{minipage}
+	\end{minipage}
+	
+	\item \textbf{Fargli provare la Sonosfera.}
+	Questa particolare struttura permette la visione di due spettacoli che si caratterizzano per l'immersione profonda nell'ascolto sonoro, il primo di questi spettacoli è:"Frammenti di Estinzione nell'Orologio Climatico"e permette a chi lo osserva di comprendere quanto sia importante accelerare il processo per la transizione alle energie verdi e quanto sia importante preservare la Natura che ci circonda, attraverso l'ascolto dei suoni delle Foreste Equatoriali registrati durante i suoi viaggi dal Professore del Conservatorio Rossini Davide Monacchi. Il secondo spettacolo è invece dedicato ad apprendere e scoprire in maniera profonda l'arte del celebre pittore Raffaello, vedendola in maniera del tutto innovativa poiché è possibile in questa struttura visionare anche i bozzetti tracciati con la matita sanguigna in preparazione ai suoi affreschi nella Sala della Signatura ai Musei Vaticani e ascoltare musiche a lui contemporanee che ci fanno immergere ancor di più nella visione delle sue opere. La sala per l'ascolto è però buia e il suono può risultare alto per i più giovani spettatori che potrebbero spaventarsi, si consiglia quindi la visione alle classi di medie o superiori.
+	
+	\item \textbf{Per eventuali laboratori creativi con bambini gli può essere fornito un dettaglio di una delle opere per poi far sì che vadano a ricercare essa all'interno del museo.}
+	
+	
+	\end{enumerate}
+\newpage
+\listoffigures
+
+\vspace*{\fill}
+% Print license shield
+\doclicenseThis
+
+\end{document}
