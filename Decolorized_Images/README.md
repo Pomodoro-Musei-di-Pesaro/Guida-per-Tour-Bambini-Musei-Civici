@@ -8,13 +8,6 @@ License: © Comune di Pesaro
 ### [Bellini Giovanni - Incoronazione della Vergine](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
 License: © Comune di Pesaro
 
-> ### [Detail: Incoronazione della Vergine.](https://commons.wikimedia.org/wiki/File:Pala_di_pesaro_02.jpg) 
-> License: Public Domain 
-
-> ### [Detail: S. Giorgio e il Drago.](https://commons.wikimedia.org/wiki/File:Bellini,_pala_di_pesaro_03_predella.JPG?uselang=it) 
-> License: [Creative Commons, Attribution-Share Alike 3.0 Unported.](https://creativecommons.org/licenses/by-sa/3.0/deed.en)
->Author: [Sailko](https://commons.wikimedia.org/wiki/User:Sailko)
-
 ---
 
 ### [Vitale da Bologna - Santo Ambrogio in trono](http://webapp.comune.pesaro.pu.it/scriptcase/app/pandora/treemenu/)
