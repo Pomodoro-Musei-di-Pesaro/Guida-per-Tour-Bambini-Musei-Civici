@@ -19,6 +19,10 @@
 % Justifying text
 \emergencystretch 3em
 
+% Remove first empty page
+\usepackage{atbegshi}
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
 % License
 \usepackage[
 	type={CC},
@@ -96,6 +100,8 @@
 		\date{}
 
 		\maketitle
+		% Adjust page counter
+		\setcounter{page}{1}
 		\newpage
 
 		\tableofcontents
