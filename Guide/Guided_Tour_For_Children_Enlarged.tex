@@ -16,6 +16,12 @@
 % Stop hyphenation
 \usepackage[none]{hyphenat}
 
+% Adjust paragraph.
+\usepackage{changepage}
+
+% Coloring links
+\usepackage{xcolor}
+
 % Justifying text
 \emergencystretch 3em
 
@@ -105,6 +111,19 @@
 		\date{}
 
 		\maketitle
+		
+			\begin{adjustwidth}{-30mm}{-30mm}
+			\vspace*{\fill}
+			\centering
+			\fboxrule=2pt
+			\fbox
+			{
+				\begin{minipage}{0.85\linewidth}
+					\normalsize{Il seguente documento è ottimizzato per la visualizzazione digitale con \href{https://get.adobe.com/it/reader/}{\textcolor{blue}{Adobe~Acrobat~Reader}}.}
+				\end{minipage}
+			}
+		\end{adjustwidth}
+		
 		% Adjust page counter
 		\setcounter{page}{1}
 		\newpage
