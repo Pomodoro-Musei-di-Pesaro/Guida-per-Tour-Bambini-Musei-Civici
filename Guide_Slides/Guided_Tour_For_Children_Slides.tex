@@ -21,6 +21,9 @@
 % Stop hyphenation
 \usepackage[none]{hyphenat}
 
+% Coloring links
+\usepackage{xcolor}
+
 % License
 \usepackage[
 	type={CC},
@@ -109,7 +112,20 @@
 
 \begin{document}
 	
-	\frame\maketitle
+	%\frame\maketitle
+	\begin{frame}
+		\maketitle
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt
+		\fbox
+		{
+			\begin{minipage}{0.9\linewidth}
+				\small{Il seguente documento è ottimizzato per la visualizzazione digitale con \href{https://get.adobe.com/it/reader/}{\textcolor{blue}{Adobe~Acrobat~Reader}}.}  
+			\end{minipage}
+		}
+	\end{frame}
 	
 	\frame\tableofcontents
 	
