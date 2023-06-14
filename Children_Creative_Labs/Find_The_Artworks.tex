@@ -87,7 +87,7 @@ version={4.0},
 		\item Numerazione parti: da 0 a 99
 		\item Percentuale di visione d'immagine scelta: 30\% (mostrate 30 parti su 100).
 		\item Sequenza di parti visibili prima immagine:  6 8 9 12 13 22 25 28 29 31 32 34 36 38 40 41 42 45 48 50 53 57 69 70 75 76 77 79 81 85.
-		\item Sequenza di parti visibili seconda immagine:  1 4 6 8 9 18 22 24 25 27 28 29 30 37 39 51 52 54 57 59 65 70 74 77 79 81 82 85 89 94.
+		\item Sequenza di parti visibili seconda immagine:  1 4 6 8 9 18 22 24 25 27 28 29 30 37 39 51 52 54 57 59 63 65 70 74 77 79 81 82 85 94.
 		\item Sequenza di parti visibili terza immagine:  5 7 18 20 21 24 26 27 28 29 32 39 40 46 48 49 54 60 61 62 68 71 79 81 84 90 91 94 97 99.
 		\item Sequenza di parti visibili quarta immagine:  1 4 7 12 15 16 17 18 21 24 25 26 28 34 37 40 49 51 54 56 61 67 69 76 82 83 86 91 95 99.
 	\end{itemize}
@@ -117,18 +117,18 @@ version={4.0},
 							\draw[draw=none,fill=white] (0.6,0.2) rectangle (0.71,0.31);
 							\draw[draw=none,fill=white] (0.3,0.2) rectangle (0.41,0.51);
 							\draw[draw=none,fill=white] (0.5,0.3) rectangle (0.61,0.41);
-							\draw[draw=none,fill=white] (0.9,0.3) rectangle (1.1,0.61);
+							\draw[draw=none,fill=white] (0.9,0.3) rectangle (1.01,0.61);
 							\draw[draw=none,fill=white] (0,0.6) rectangle (0.91,0.71);
 							\draw[draw=none,fill=white] (0.1,0.5) rectangle (0.21,0.81);
-							\draw[draw=none,fill=white] (0.2,0.5) rectangle (0.31,1.1);
-							\draw[draw=none,fill=white] (0.4,0.4) rectangle (0.51,1.1);
-							\draw[draw=none,fill=white] (0,0.9) rectangle (1.1,1.1);
+							\draw[draw=none,fill=white] (0.2,0.5) rectangle (0.31,1);
+							\draw[draw=none,fill=white] (0.4,0.4) rectangle (0.51,1);
+							\draw[draw=none,fill=white] (0,0.9) rectangle (1.01,1);
 							\draw[draw=none,fill=white] (0,0.8) rectangle (0.11,0.91);
 							\draw[draw=none,fill=white] (0.3,0.7) rectangle (0.41,0.91);
 							\draw[draw=none,fill=white] (0.5,0.5) rectangle (0.61,0.61);
 							\draw[draw=none,fill=white] (0.6,0.4) rectangle (0.71,0.61);
 							\draw[draw=none,fill=white] (0.8,0.5) rectangle (0.91,0.91);
-							\draw[draw=none,fill=white] (0.6,0.8) rectangle (1.1,0.91);
+							\draw[draw=none,fill=white] (0.6,0.8) rectangle (1.01,0.91);
 						\end{scope}
 					\end{tikzpicture}
 					
@@ -139,18 +139,49 @@ version={4.0},
 				\end{minipage}
 		}%
 			\hfill{
-				\fbox{
-					\begin{minipage} [r] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
-						\medskip
-						\centering
-						\adjustbox{trim={0.5\width}  {0.5\height} 0 0,clip}%
-						{\includegraphics[scale=2]{Mengaroni_Ferruccio-Medusa.jpg}}
-						
+			\fbox{
+				\begin{minipage} [l] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
+					\medskip
+					\centering
+					\begin{tikzpicture}
+						\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[]{Mengaroni_Ferruccio-Medusa.jpg}};
+						\begin{scope}[x={(image.south east)},y={(image.north west)}]
+								\draw[draw=none,fill=white] (0.1,0.3) rectangle (0.71,0.51);
+								\draw[draw=none,fill=white] (0,0.1) rectangle (0.81,0.21);
+								\draw[draw=none,fill=white] (0.1,0.3) rectangle (0.71,0.51);
+								\draw[draw=none,fill=white] (0,0) rectangle (0.11,0.31);
+								\draw[draw=none,fill=white] (0.1,0.1) rectangle (0.21,0.31);
+								\draw[draw=none,fill=white] (0.2,0) rectangle (0.31,0.21);
+								\draw[draw=none,fill=white] (0.3,0) rectangle (0.41,0.61);
+								\draw[draw=none,fill=white] (0.5,0) rectangle (0.61,0.21);
+								\draw[draw=none,fill=white] (0.6,0.1) rectangle (0.71,1);
+								\draw[draw=none,fill=white] (0.1,0.3) rectangle (0.71,0.51);
+								\draw[draw=none,fill=white] (0.7,0) rectangle (0.81,0.11);
+								\draw[draw=none,fill=white] (0.9,0.1) rectangle (1.01,0.21);
+								\draw[draw=none,fill=white] (0.8,0.3) rectangle (0.91,1);
+								\draw[draw=none,fill=white] (0,0.4) rectangle (1.01,0.51);
+								\draw[draw=none,fill=white] (0,0.4) rectangle (0.11,0.71);
+								\draw[draw=none,fill=white] (0.5,0.3) rectangle (0.61,0.61);
+								\draw[draw=none,fill=white] (0.6,0.6) rectangle (1.01,0.71);
+								\draw[draw=none,fill=white] (0.6,0.8) rectangle (1.01,1);
+								\draw[draw=none,fill=white] (0,0.6) rectangle (0.31,0.71);
+								\draw[draw=none,fill=white] (0.1,0.7) rectangle (0.41,0.81);
+								\draw[draw=none,fill=white] (0.4,0.6) rectangle (0.51,0.71);
+								\draw[draw=none,fill=white] (0.5,0.7) rectangle (0.71,0.81);
+								\draw[draw=none,fill=white] (0,0.8) rectangle (0.11,1);
+								\draw[draw=none,fill=white] (0,0.9) rectangle (0.41,1);
+								\draw[draw=none,fill=white] (0.3,0.8) rectangle (0.51,0.91);
+								\draw[draw=none,fill=white] (0.5,0.9) rectangle (0.81,1);
+								
+							\end{scope}
+						\end{tikzpicture}
+					
 						\vspace*{\fill}
 						\fboxrule=4pt{
-							\framebox[\textwidth]{\rule{0pt}{55pt}}}
+						\framebox[\textwidth]{\rule{0pt}{55pt}}}
+					
 					\end{minipage}
-				}
+				}%
 			}
 		\end{minipage}
 	
