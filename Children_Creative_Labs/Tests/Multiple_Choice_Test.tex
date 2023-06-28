@@ -1,0 +1,120 @@
+\documentclass[hidelinks,12pt,a4paper]{article}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier} 
+
+% Stop hyphenation
+\usepackage[none]{hyphenat}
+
+% License
+\usepackage[
+type={CC},
+modifier={by-nc-sa},
+version={4.0},
+]{doclicense}
+
+% Comands to create mutiple choice quiz
+\newcounter{question}
+\newif\ifinchoices
+\inchoicesfalse
+\newenvironment{questions}{%
+	\list{\thequestion.}%
+	{%
+		\usecounter{question}%
+		\def\question{\inchoicesfalse\item}%
+		\settowidth{\leftmargin}{10.\hskip\labelsep}%
+		\labelwidth\leftmargin\advance\labelwidth-\labelsep
+	}%
+}
+{%
+	\endlist
+}%
+
+\newcounter{choice}
+\renewcommand\thechoice{\Alph{choice}}
+\newcommand\choicelabel{\thechoice.}
+\def\choice{%
+	\ifinchoices
+	% Do nothing
+	\else
+	\startchoices
+	\fi
+	\refstepcounter{choice}%
+	\ifnum\value{choice}>1\relax
+	\penalty -50\hskip 1em plus 1em\relax
+	\fi
+	\choicelabel
+	\nobreak\enskip
+}% choice
+\def\CorrectChoice{%
+	\choice
+	\addanswer{\thequestion}{\thechoice}%
+}
+\let\correctchoice\CorrectChoice
+
+\newcommand{\startchoices}{%
+	\inchoicestrue
+	\setcounter{choice}{0}%
+	% \par % Uncomment this to have choices always start a new line
+	% If we're continuing the paragraph containing the question,
+	% then leave a bit of space before the first choice:
+	\ifvmode\else\enskip\fi
+}%
+
+\newbox\allanswers
+\setbox\allanswers=\hbox{}
+\newcommand{\addanswer}[2]{%
+	\global\setbox\allanswers=\hbox{\unhbox\allanswers #1.~#2\quad}%
+}
+\newcommand{\showanswers}{%
+	\vfill
+	\begin{center}
+		Answers
+	\end{center}
+	\noindent\unhbox\allanswers
+}
+
+% Create fake sections
+\newcommand{\fakesection}[1]{%
+	\par\refstepcounter{section}% Increase section counter
+	\sectionmark{#1}% Add section mark (header)
+	\addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}
+}
+
+
+\begin{document}
+	
+	\title{\textbf{Test per i bambini}}
+	\author{Alice Balestieri\\Francesco Rombaldoni}
+	\date{}
+	\maketitle
+	
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	\fakesection{Domande}
+	
+	
+	\fbox{
+	Nome: \dotfill
+	}
+	
+	\begin{questions}
+		
+		\question What was the color of George Washington's white horse?
+		\choice Blue
+		\choice Yellow
+		\correctchoice White
+		\choice Black
+		
+		\question Who's buried in Grant's tomb?
+		\choice Washington
+		\choice Mickey Mouse
+		\correctchoice Grant
+		
+	\end{questions}
+	
+	\section{Risposte}
+	
+\end{document} 
