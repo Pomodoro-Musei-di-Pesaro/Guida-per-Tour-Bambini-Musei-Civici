@@ -3,6 +3,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{fourier} 
 
+% To clone parts of text
+\usepackage{clipboard}
+
 % For Creating a table
 \usepackage{tabularx}
 
@@ -31,7 +34,7 @@ version={4.0},
 
 \begin{document}
 	
-	\title{\textbf{Test a risposta aperta per i bambini}}
+	\title{\textbf{Test per Bambini}}
 	\author{Alice Balestieri\\Francesco Rombaldoni}
 	\date{}
 	\maketitle
@@ -46,8 +49,9 @@ version={4.0},
 		\textbf{I consigli sono rivolti agli operatori.}
 	\end{center}
 	
-	Questo test serve per valutare la comprensione del tour guidato ai Musei Civici da parte dei bambini, per questo motivo non è necessario somministrare il compito ai singoli bambini, ma per favorire il lavoro di gruppo è consigliabile di dividere i bambini in gruppi di massimo tre elementi (in questo caso il campo "nome" diventa il nome del gruppo, oppure i nomi dei componenti della squadra). Il tempo consigliato per completare il test è di circa un'ora.\\
+	Questo test serve per valutare la comprensione del tour guidato ai Musei Civici da parte dei bambini, per questo motivo non è necessario somministrare il compito ai singoli bambini, ma per favorire il lavoro di gruppo è consigliabile di dividere i bambini in gruppi di massimo tre elementi (in questo caso il campo "nome" diventa il nome del gruppo, oppure i nomi dei componenti della squadra). Il tempo consigliato per completare il test è di circa quindici minuti.\\
 	Scaduto il tempo raccogliere i compiti ed iniziare la correzione, per questa fase si consiglia in particolare di segnare con una penna rossa gli errori commessi e con la stessa scrivere nel campo "voto" la valutazione del test. Per segnare il voto si è preferibile usare una valutazione descrittiva (come la scala: sufficiente, discreto, buono, distinto, ottimo) piuttosto che una valutazione numerica (esempio quella decimale), in modo che i bambini non possano fare grandi confronti tra di loro, in modo da tenere un clima più sereno anche al fronte di un voto che potrebbe creare disparità.\\
+	Le ultime tre domande aperte non sono da correggere, siccome servono per capire le preferenze dei bambini.
 	
 	\begin{center}
 		\large{\textbf{Tabella per la correzione}}\\
@@ -59,13 +63,13 @@ version={4.0},
 			\hline
 			\textbf{Descrizione} & \textbf{Voto} \\
 			\hline
-			I concetti sono stati capiti perfettamente & Ottimo\\
+			Sono stati commessi massimo due errori & Ottimo\\
 			\hline
-			Nelle risposte appaiono delle piccole imprecisioni & Distinto\\
+			Sono stati commessi dai tre ai cinque errori & Distinto\\
 			\hline
-			Ci sono delle incertezze & Buono\\
+			Sono stati commessi dai sei agli otto errori & Buono\\
 			\hline
-			Ci sono tante incertezze & Discreto\\
+			Sono stati commessi dai nove ai dieci errori & Discreto\\
 			\hline
 			Sono stati commessi numerosi errori & Sufficiente\\
 			\hline
@@ -90,21 +94,51 @@ version={4.0},
 		}
 	}
 	
-	% Starting questions here
-	\bigskip
+	% Starting Multiple Choice Questions here
+	\begin{questions}
+		\Copy{questions}
+		{
+			% This is a question
+			\question Which of these famous physicists published a paper on Brownian Motion?
+			\begin{checkboxes}
+				\choice Stephen Hawking 
+				\CorrectChoice Albert Einstein
+				\choice Emmy Noether
+				\choice I don't know
+			\end{checkboxes}
+			% End of question
+			
+		}
+	\end{questions}
+
+	% End Multiple Choice Questions
+	
+	% Starting Open-Ended Questions here
+	
 	\begin{enumerate}
+		% This is a question
 		\item "Domanda 1"\\
 					\line(1,0){\linewidth}\\
 					\line(1,0){\linewidth}\\
+		% End of question
 		\item "Domanda 2"\\
 					\line(1,0){\linewidth}\\
 					\line(1,0){\linewidth}\\
 	\end{enumerate}
+	% End Open-Ended Questions
 	
 	\newpage
 	\section{Risposte Test}
 	
 	\pagestyle{plain}
+	
+	% Multiple Choice Questions Answers (auto-generated)
+	\begin{questions}
+		\printanswers
+		\Paste{questions}
+	\end{questions}
+
+	% Open-ended Questions Answers
 	\begin{adjustwidth}{35mm}{}
 		\begin{enumAnswers}
 			\item "Risposta domanda 1"
