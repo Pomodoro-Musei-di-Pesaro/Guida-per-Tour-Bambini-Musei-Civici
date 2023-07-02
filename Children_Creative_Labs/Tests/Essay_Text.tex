@@ -3,11 +3,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage{fourier} 
 
-% To clone parts of text
-\usepackage{clipboard}
-
 % For Creating a table
 \usepackage{tabularx}
+
+% Adjust paragraph.
+\usepackage{changepage}
 
 % License
 \usepackage[
@@ -24,9 +24,14 @@ version={4.0},
 	% Add more content here, if needed.
 }
 
+% Create a special enumerate enviroment
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+\newlist{enumAnswers}{enumerate}{1}
+\setlist[enumAnswers,1]{label=\textbf{Risposta domanda \arabic*. }}
+
 \begin{document}
 	
-	\title{\textbf{Test a crocette per i bambini}}
+	\title{\textbf{Test a risposta aperta per i bambini}}
 	\author{Alice Balestieri\\Francesco Rombaldoni}
 	\date{}
 	\maketitle
@@ -54,13 +59,13 @@ version={4.0},
 			\hline
 			\textbf{Descrizione} & \textbf{Voto} \\
 			\hline
-			Sono stati commessi massimo due errori & Ottimo\\
+			I concetti sono stati capiti perfettamente & Ottimo\\
 			\hline
-			Sono stati commessi dai tre ai cinque errori & Distinto\\
+			Nelle risposte appaiono delle piccole imprecisioni & Distinto\\
 			\hline
-			Sono stati commessi dai sei agli otto errori & Buono\\
+			Ci sono delle incertezze & Buono\\
 			\hline
-			Sono stati commessi dai nove ai dieci errori & Discreto\\
+			Ci sono tante incertezze & Discreto\\
 			\hline
 			Sono stati commessi numerosi errori & Sufficiente\\
 			\hline
@@ -86,33 +91,28 @@ version={4.0},
 	}
 	
 	% Starting questions here
-	\begin{questions}
-		\Copy{questions}
-		{
-			% This is a question
-			\question Which of these famous physicists published a paper on Brownian Motion?
-			\begin{checkboxes}
-				\choice Stephen Hawking 
-				\CorrectChoice Albert Einstein
-				\choice Emmy Noether
-				\choice I don't know
-			\end{checkboxes}
-			% End of question
-			
-		}
-	\end{questions}
+	\bigskip
+	\begin{enumerate}
+		\item "Domanda 1"\\
+					\line(1,0){\linewidth}\\
+					\line(1,0){\linewidth}\\
+		\item "Domanda 2"\\
+					\line(1,0){\linewidth}\\
+					\line(1,0){\linewidth}\\
+	\end{enumerate}
 	
 	\newpage
 	\section{Risposte Test}
 	
 	\pagestyle{plain}
+	\begin{adjustwidth}{35mm}{}
+		\begin{enumAnswers}
+			\item "Risposta domanda 1"
+			\item "Risposta domanda 2"
+		\end{enumAnswers}
+	\end{adjustwidth}
 	
-	\begin{questions}
-		\printanswers
-		\Paste{questions}
-	\end{questions}
-
-		\vspace*{\fill}
+	\vspace*{\fill}
 	% Print license shield
 	\doclicenseThis
 \end{document}
