@@ -12,6 +12,12 @@
 % Adjust paragraph.
 \usepackage{changepage}
 
+% Color text.
+\usepackage{xcolor}
+
+% Stop hyphenation
+\usepackage[none]{hyphenat}
+
 % License
 \usepackage[
 type={CC},
@@ -46,12 +52,13 @@ version={4.0},
 	
 	\section{Come somministrare e correggere il Test}
 	\begin{center}
-		\textbf{I consigli sono rivolti agli operatori.}
+		\textbf{I consigli sono rivolti agli Operatori.}
 	\end{center}
 	
 	Questo test serve per valutare la comprensione del tour guidato ai Musei Civici da parte dei bambini, per questo motivo non è necessario somministrare il compito ai singoli bambini, ma per favorire il lavoro di gruppo è consigliabile di dividere i bambini in gruppi di massimo tre elementi (in questo caso il campo "nome" diventa il nome del gruppo, oppure i nomi dei componenti della squadra). Il tempo consigliato per completare il test è di circa quindici minuti.\\
-	Scaduto il tempo raccogliere i compiti ed iniziare la correzione, per questa fase si consiglia in particolare di segnare con una penna rossa gli errori commessi e con la stessa scrivere nel campo "voto" la valutazione del test. Per segnare il voto si è preferibile usare una valutazione descrittiva (come la scala: sufficiente, discreto, buono, distinto, ottimo) piuttosto che una valutazione numerica (esempio quella decimale), in modo che i bambini non possano fare grandi confronti tra di loro, in modo da tenere un clima più sereno anche al fronte di un voto che potrebbe creare disparità.\\
-	Le ultime tre domande aperte non sono da correggere, siccome servono per capire le preferenze dei bambini.
+	Scaduto il tempo, raccogliere i compiti ed iniziare la correzione, per questa fase si consiglia in particolare di segnare con una penna rossa gli errori commessi e con la stessa scrivere nel campo "voto" la valutazione del test. Per segnare il voto è preferibile usare una valutazione descrittiva (come la scala: sufficiente, discreto, buono, distinto, ottimo) piuttosto che una valutazione numerica (esempio quella decimale), in modo che i bambini non possano fare grandi confronti tra di loro, in modo da tenere un clima più sereno anche al fronte di un voto che potrebbe creare disparità.\\
+	Le ultime quattro domande aperte non sono da correggere, siccome servono per capire le preferenze dei bambini.\\
+	In caso di dubbi per la correzione, tenere una copia digitale di questo documento consultabile dallo "smartphone".
 	
 	\begin{center}
 		\large{\textbf{Tabella per la correzione}}\\
@@ -94,20 +101,80 @@ version={4.0},
 		}
 	}
 	
+	\bigskip
+	\begin{center}
+		\textcolor{red}{Dopo aver letto la domanda, colorale il cerchio accanto la risposta giusta tra quelle proposte.
+		\textbf{{\large Attenzione}, alcune domande possono avere più di una risposta corretta.}}
+	\end{center}
+	
 	% Starting Multiple Choice Questions here
 	\begin{questions}
 		\Copy{questions}
 		{
-			% This is a question
-			\question Which of these famous physicists published a paper on Brownian Motion?
-			\begin{checkboxes}
-				\choice Stephen Hawking 
-				\CorrectChoice Albert Einstein
-				\choice Emmy Noether
-				\choice I don't know
-			\end{checkboxes}
-			% End of question
 			
+			\question Cosa accadde all'autore della Medusa durante il trasporto dell'opera in occasione della Binnale di Arti Decorative di Monza?
+			\begin{checkboxes}
+				\choice L'opera rotolò scheggiandosi ai bordi
+				\CorrectChoice la Medusa gli crollò addosso schiacciandolo con il suo peso
+				\choice uno dei serpenti appartenenti alla chioma si ruppe
+			\end{checkboxes}
+		
+			\question Come venne trasportata la Pala Bellini fino a Pesaro?
+			\begin{checkboxes}
+				\choice In aereo
+				\choice In treno
+				\CorrectChoice Via mare smontata in varie parti
+			\end{checkboxes}
+		
+			\question Cosa piaceva a Rossini nei dipinti?
+			\begin{checkboxes}
+				\CorrectChoice La Presenza del colore rosso,di oro e gioielli
+				\choice Le rappresentazioni di belle donne, il cibo ed i boccali di vini e liquori
+				\choice Le rappresentazioni di carattere religioso perché molto devoto alla preghiera
+			\end{checkboxes}
+		
+			\question Che animale ha un insolito colore nero nella ceramica Leda e il Cigno?
+			\begin{checkboxes}
+				\choice Un Gufo
+				\CorrectChoice Uno Scoiattolo
+				\choice Il Cigno
+			\end{checkboxes}
+		
+			\question Che tipo di decorazioni ci sono nello Specchio in Vetro di Murano?\\
+			\begin{checkboxes}
+				\CorrectChoice Incisioni d'uva in argento
+				\choice decorazioni con animali
+				\CorrectChoice Decorazioni di fiori in vetro
+				\choice incisioni di paesaggi
+			\end{checkboxes}
+		
+			\question Che animale ha ucciso Adone durante la caccia?
+			\begin{checkboxes}
+				\choice Un Lupo
+				\CorrectChoice Un Cinghiale
+				\choice Una Volpe
+			\end{checkboxes}
+			
+			\question Di che malattia soffriva la Marchesa Toschi-Mosca?
+			\begin{checkboxes}
+				\CorrectChoice Insonnia
+				\choice Sonnambulismo
+				\choice Mal di stomaco
+			\end{checkboxes}
+		
+			\question Che Paesaggio è raffigurato nella coppia di Stipi della Marchesa Toschi-Mosca?
+			\begin{checkboxes}
+				\choice Venezia
+				\choice Firenze
+				\CorrectChoice Roma
+			\end{checkboxes}
+		
+			\question Che tipo di scene sono dipinte nel Mercato di Aureliano Milani?
+			\begin{checkboxes}
+				\CorrectChoice Di vita quotidiana
+				\choice Di vita di Corte, nobiliare
+				\choice di natura ecclesiastica, religiosa
+			\end{checkboxes}
 		}
 	\end{questions}
 
@@ -115,15 +182,29 @@ version={4.0},
 	
 	% Starting Open-Ended Questions here
 	
-	\begin{enumerate}[start=2] %This is a simple solution to have valid question numbers
-		% This is a question
-		\item "Domanda 1"\\
+	\begin{enumerate}[start=10] %This is a simple solution to have valid question numbers
+
+		 \item Quale tra Sant'Ambrogio in Trono e Trompe l'Oelil con Sonetto ti sembra più realistico come quadro? \\Motiva la tua risposta.\\
 					\line(1,0){\linewidth}\\
 					\line(1,0){\linewidth}\\
-		% End of question
-		\item "Domanda 2"\\
+		
+		\item Che opera pittorica ti è piaciuta di più all'interno del Museo?\\
 					\line(1,0){\linewidth}\\
 					\line(1,0){\linewidth}\\
+
+		\item Quale delle stanze del Museo che hai visitato ti ricordi meglio e perchè?\\
+					\line(1,0){\linewidth}\\
+					\line(1,0){\linewidth}\\
+					
+	\item Quale opera ceramica ti ha colpito di più?\\
+					\line(1,0){\linewidth}\\
+					\line(1,0){\linewidth}\\
+					
+	\item Se hai visto gli spettacoli della Sonosfera quale dei due video ti è piaciuto di più?\\
+					\line(1,0){\linewidth}\\
+					\line(1,0){\linewidth}\\
+		
+		
 	\end{enumerate}
 	% End Open-Ended Questions
 	
@@ -140,9 +221,8 @@ version={4.0},
 
 	% Open-ended Questions Answers
 	\begin{adjustwidth}{35mm}{}
-		\begin{enumAnswers}[start=2]
-			\item "Risposta domanda 1"
-			\item "Risposta domanda 2"
+		\begin{enumAnswers}[start=10]
+			\item Trompe l'Oelil con Sonetto è più realistico come quadro, in quanto fa uso della prospettiva, cosa che manca nel dipinto di Sant'Ambrogio in Trono.
 		\end{enumAnswers}
 	\end{adjustwidth}
 	
