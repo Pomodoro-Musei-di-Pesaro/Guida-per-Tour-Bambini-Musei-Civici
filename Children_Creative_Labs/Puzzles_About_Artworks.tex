@@ -27,6 +27,13 @@ modifier={by-nc-sa},
 version={4.0},
 ]{doclicense}
 
+% Command to create fake sections
+\newcommand{\fakesection}[1]{%
+	\par\refstepcounter{section}% Increase section counter
+	\sectionmark{#1}% Add section mark (header)
+	\addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}% Add section to ToC
+}
+
 % Defining enviroment and commands to write puzzle weaves over images
 \pgfmathparse{int(random(1,120))}
 
@@ -86,52 +93,67 @@ version={4.0},
 		\item Gessi Giovan Francesco - Morte di Adone
 	\end{itemize}
 
-	\section{Puzzle}
-
 	\newgeometry{top=15mm, bottom=15mm}
 	\begin{adjustwidth}{-30mm}{-30mm}
+		
+		\fakesection{Puzzle}
+	
+		\centering{\Large \textbf{Puzzle}}
+		\vspace{5mm}
+		
+	
 	
 	% Start inserting images (used images formats from "Coloring_Artworks")
 	
 			\begin{minipage}{\linewidth}
 			\centering
-		
-			\begin{tikzpicture}
+				\begin{tikzpicture}
 				
-				\node[anchor=south west,inner sep=0] (image) at (0,0) {
-					\includegraphics[scale=3.6]{Mengaroni_Ferruccio-Medusa.jpg}
-				};
+					\node[anchor=south west,inner sep=0] (image) at (0,0) {
+						\includegraphics[scale=3.6]{Mengaroni_Ferruccio-Medusa.jpg}
+					};
 				
-				\def\xmax{10}
-				\def\ymax{7}
+					\def\xmax{18}
+					\def\ymax{18}
 				
 				
-				\foreach \x in {0,...,\xmax}{
+					\foreach \x in {0,...,\xmax}{
 					\foreach \y in {0,...,\ymax}{
 						
-						\ifnum\y=0
-						\def\bottom{0}
-						\else
-						\pgfmathrandomitem{\bottom}{inout}%
-						\fi
+							\ifnum\y=0
+							\def\bottom{0}
+							\else
+							\pgfmathrandomitem{\bottom}{inout}%
+							\fi	
 						
-						\ifnum\x=\xmax
-						\def\right{0}
-						\else
-						\pgfmathrandomitem{\right}{inout}%
-						\fi
+							\ifnum\x=\xmax
+							\def\right{0}
+							\else
+							\pgfmathrandomitem{\right}{inout}%
+							\fi
 						
-						\begin{scope}[xshift=\x cm, yshift=\y cm]
-							\piece{\bottom}{\right}
-						\end{scope}
+							\begin{scope}[xshift=\x cm, yshift=\y cm]
+								\piece{\bottom}{\right}
+							\end{scope}
+						}
 					}
-				}
 				
-				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+					\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
 				
-			\end{tikzpicture}
-		
+				\end{tikzpicture}
 			\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Mengaroni Ferruccio - Medusa.
+				\end{minipage}
+		}}
+		\newpage
 	
 	\end{adjustwidth}
 \end{document}
