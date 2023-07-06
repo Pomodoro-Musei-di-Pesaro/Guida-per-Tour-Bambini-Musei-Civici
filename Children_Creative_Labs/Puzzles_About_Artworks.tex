@@ -13,11 +13,8 @@
 % Stop hyphenation
 \usepackage[none]{hyphenat}
 
-% To draw images
+% To draw over images
 \usepackage{tikz}
-
-% To generate jigsaw
-\usepackage{jigsaw}
 
 % Adjust paragraph.
 \usepackage{changepage}
@@ -29,6 +26,23 @@ type={CC},
 modifier={by-nc-sa},
 version={4.0},
 ]{doclicense}
+
+% Defining enviroment and commands to write puzzle weaves over images
+\pgfmathparse{int(random(1,120))}
+
+\newcommand{\side}[1]{
+	(0.0,#1*0.00) .. controls (0.0,#1*0.00) and (0.4,#1*-0.04) .. 
+	(0.4,#1*0.04) .. controls (0.4,#1*0.11) and (0.2,#1*0.26) .. 
+	(0.5,#1*0.26) .. controls (0.8,#1*0.26) and (0.6,#1*0.11) .. 
+	(0.6,#1*0.04) .. controls (0.6,#1*-0.04) and (1.0,#1*0.00) .. 
+	(1.0,#1*0.00)
+}
+
+\newcommand{\piece}[2]{
+	\draw[ultra thick] \side{#1} [rotate around={90:(0.5,0.5)}] \side{#2};
+}
+
+\pgfmathdeclarerandomlist{inout}{{-1}{1}}
 
 \begin{document}
 	
@@ -48,11 +62,11 @@ version={4.0},
 	\end{center}
 	
 	\subsection{Variante 1}
-	Dopo aver ritagliato i vari puzzle, mischiare i vari pezzi di tutti i puzzle ritagliati (per esempio mettendoli in una scatola per poi scuoterla), per poi disporli casualmente su di un tavolo. I bambini dovranno risolvere i vari puzzle riconoscendo i vari pezzi delle opere.\\
+	Dopo aver stampato su del cartoncino e ritagliato i vari puzzle, mischiare i vari pezzi di tutti i puzzle ritagliati (per esempio mettendoli in una scatola per poi scuoterla), per poi disporli casualmente su di un tavolo. I bambini dovranno risolvere i vari puzzle riconoscendo i vari pezzi delle opere.\\
 	Quando i bambini hanno finito di risolvere i puzzle, domandarli se si ricordano i nomi delle opere che hanno ricomposto.
 	
 	\subsection{Variante 2}
-	Dopo aver ritagliato i vari puzzle, mischiare i vari pezzi di tutti i puzzle ritagliati (per esempio mettendoli in una scatola per poi scuoterla), per poi disporli casualmente al centro di un tavolo. Dividere i bambini in squadre da massimo tre elementi, successivamente assegnare ad ogni squadra due opere prese dalla lista delle opere trasformate in puzzle. I bambini dovranno cercare i vari pezzi dell'opera che devono ricomporre per poi risolvere i puzzle sui bordi del tavolo (queste due azioni possono essere fatte simultaneamente dai vari elementi del gruppo).
+	Dopo aver stampato su del cartoncino e ritagliato i vari puzzle, mischiare i vari pezzi di tutti i puzzle ritagliati (per esempio mettendoli in una scatola per poi scuoterla), per poi disporli casualmente al centro di un tavolo. Dividere i bambini in squadre da massimo tre elementi, successivamente assegnare ad ogni squadra due opere prese dalla lista delle opere trasformate in puzzle. I bambini dovranno cercare i vari pezzi dell'opera che devono ricomporre per poi risolvere i puzzle sui bordi del tavolo (queste due azioni possono essere fatte simultaneamente dai vari elementi del gruppo).
 	
 	\section{Lista delle opere trasformate in puzzle}
 	\begin{itemize}
@@ -83,14 +97,41 @@ version={4.0},
 			\centering
 		
 			\begin{tikzpicture}
-			%	\clip (0,0) rectangle (6,4);
-				\node at (0,0) {%
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
 					\includegraphics[scale=3.6]{Mengaroni_Ferruccio-Medusa.jpg}
 				};
-				\jigsaw{6}{4}
+				
+				\def\xmax{10}
+				\def\ymax{7}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
 			\end{tikzpicture}
 		
-		\end{minipage}
+			\end{minipage}
 	
 	\end{adjustwidth}
 \end{document}
