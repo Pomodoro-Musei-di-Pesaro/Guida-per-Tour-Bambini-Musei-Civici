@@ -17,4 +17,3 @@ Guida per spiegare le Opere dei Musei Civici ai Bambini.
 
 # To-Do
 - Aggiornare la release dei documenti.
-- Portare a termine i puzzle.
