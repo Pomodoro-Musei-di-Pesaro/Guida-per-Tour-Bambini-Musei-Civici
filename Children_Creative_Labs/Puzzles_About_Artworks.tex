@@ -154,6 +154,659 @@ version={4.0},
 				\end{minipage}
 		}}
 		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+					\includegraphics[scale=0.2]{Bellini_Giovanni-Incoronazione_della_Vergine.jpg}
+				};
+				
+				\def\xmax{14}
+				\def\ymax{23}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Bellini Giovanni - Incoronazione della Vergine.
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+					\includegraphics[scale=0.14]{Vitale_da_Bologna-Santo_Ambrogio_in_trono.jpg}
+				};
+				
+				\def\xmax{10}
+				\def\ymax{23}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Vitale da Bologna - Sant'Ambrogio in trono
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+					\includegraphics[scale=0.11]{Desani_Pietro-Rebecca_ed_Eleazar.jpg}
+				};
+				
+				\def\xmax{17}
+				\def\ymax{13}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Desani Pietro - Rebecca ed Eleazar.
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+					\includegraphics[scale=3.7]{Giovanni_Antonio_Garella-Leda_e_il_cigno.jpg}
+				};
+				
+				\def\xmax{19}
+				\def\ymax{19}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Giovanni Antonio Garella - Leda e il Cigno.
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+					\includegraphics[scale=0.9]{Vedute_di_Roma_1.jpg}
+				};
+				
+				\def\xmax{17}
+				\def\ymax{10}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Vedute di Roma.
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+						\includegraphics[scale=0.6]{Orologio_notturno.jpg}
+				};
+				
+				\def\xmax{15}
+				\def\ymax{21}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Orologio notturno.
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+					\includegraphics[scale=2]{Scacciani_Antonio-Vassoio-Rosa.jpg}
+				};
+				
+				\def\xmax{16}
+				\def\ymax{12}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Scacciani Antonio - Vassoio - Rosa.
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+					\includegraphics[scale=0.13]{Milani_Aureliano-Mercato.jpg}
+				};
+				
+				\def\xmax{15}
+				\def\ymax{21}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Milani Aureliano - Mercato.
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+					\includegraphics[scale=0.2]{Berentz_Christian-Fiori_e_frutta_con_bicchieri_di_cristallo.jpg}
+				};
+				
+				\def\xmax{16}
+				\def\ymax{22}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Berentz Christian - Fiori e frutta con bicchieri di cristallo.
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+					\includegraphics[scale=0.2]{Gianlisi_Antonio_Junior-Trompe_l_oeil_con_sonetto_in_onore_di_Eugenio_di_Savoia_e_mensola_con_oggetti.jpg}
+				};
+				
+				\def\xmax{15}
+				\def\ymax{21}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Gianlisi Antonio Junior - Trompe l'oeil con sonetto in onore di Eugenio di Savoia e mensola con oggetti.
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+				\includegraphics[scale=0.2]{Gianlisi_Antonio_Junior-Trompe_l_oeil_con_paesaggio_forbici_e_mensola_con_oggetti.jpg}
+				};
+				
+				\def\xmax{16}
+				\def\ymax{22}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Gianlisi Antonio Junior - Trompe l'oeil con paesaggio forbici e mensola con oggetti.
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+					\includegraphics[scale=1.8]{Realfonzo_Tommaso-Natura_morta_con_dolci_frutta_uova_e_formaggi.jpg}
+				};
+				
+				\def\xmax{19}
+				\def\ymax{13}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Realfonzo Tommaso - Natura morta con dolci frutta uova e formaggi.
+				\end{minipage}
+		}}
+		\newpage
+		
+		\begin{minipage}{\linewidth}
+			\centering
+			\begin{tikzpicture}
+				
+				\node[anchor=south west,inner sep=0] (image) at (0,0) {
+					\includegraphics[scale=0.11]{Gessi_Giovan_Francesco-Morte_di_Adone.jpg}
+				};
+				
+				\def\xmax{18}
+				\def\ymax{11}
+				
+				
+				\foreach \x in {0,...,\xmax}{
+					\foreach \y in {0,...,\ymax}{
+						
+						\ifnum\y=0
+						\def\bottom{0}
+						\else
+						\pgfmathrandomitem{\bottom}{inout}%
+						\fi	
+						
+						\ifnum\x=\xmax
+						\def\right{0}
+						\else
+						\pgfmathrandomitem{\right}{inout}%
+						\fi
+						
+						\begin{scope}[xshift=\x cm, yshift=\y cm]
+							\piece{\bottom}{\right}
+						\end{scope}
+					}
+				}
+				
+				\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+				
+			\end{tikzpicture}
+		\end{minipage}
+		
+		\vspace*{\fill}
+		\centering
+		\fboxrule=2pt{
+			\fbox
+			{
+				\begin{minipage}{0.95\linewidth}
+					\centering
+					Gessi Giovan Francesco - Morte di Adone.
+				\end{minipage}
+		}}
+		\newpage
+	
+		% Print license shield
+		\doclicenseThis
 	
 	\end{adjustwidth}
 \end{document}
