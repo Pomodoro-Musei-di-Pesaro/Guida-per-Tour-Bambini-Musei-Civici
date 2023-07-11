@@ -51,6 +51,62 @@ version={4.0},
 
 \pgfmathdeclarerandomlist{inout}{{-1}{1}}
 
+%Defining Command to write jigsaws over an image
+\newcommand{\puzzle}[4]{  % Argument 1 -> includegraphics entire string
+												  % Argument 2  -> define Xmax (jigsaw pieces)
+												  % Argument 3 -> define Ymax (jigsaw pieces)
+												  % Argument 4 ->  Image caption
+
+\begin{minipage}{\linewidth}
+	\centering
+	\begin{tikzpicture}
+		
+		\node[anchor=south west,inner sep=0] (image) at (0,0) {#1};
+		
+		\def\xmax{#2}
+		\def\ymax{#3}
+		
+		
+		\foreach \x in {0,...,\xmax}{
+			\foreach \y in {0,...,\ymax}{
+				
+				\ifnum\y=0
+				\def\bottom{0}
+				\else
+				\pgfmathrandomitem{\bottom}{inout}%
+				\fi	
+				
+				\ifnum\x=\xmax
+				\def\right{0}
+				\else
+				\pgfmathrandomitem{\right}{inout}%
+				\fi
+				
+				\begin{scope}[xshift=\x cm, yshift=\y cm]
+					\piece{\bottom}{\right}
+				\end{scope}
+			}
+		}
+		
+		\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
+		
+	\end{tikzpicture}
+\end{minipage}
+
+\vspace*{\fill}
+\centering
+\fboxrule=2pt{
+	\fbox
+	{
+		\begin{minipage}{0.95\linewidth}
+			\centering
+			#4
+		\end{minipage}
+}}
+\newpage
+
+}
+
 \begin{document}
 	
 	\title{\textbf{\centering{Laboratorio creativo per bambini}\\Puzzle sulle opere d'arte}}
@@ -105,55 +161,7 @@ version={4.0},
 	
 	% Start inserting images (used images formats from "Coloring_Artworks")
 	
-			\begin{minipage}{\linewidth}
-			\centering
-				\begin{tikzpicture}
-				
-					\node[anchor=south west,inner sep=0] (image) at (0,0) {
-						\includegraphics[scale=3.6]{Mengaroni_Ferruccio-Medusa.jpg}
-					};
-				
-					\def\xmax{18}
-					\def\ymax{18}
-				
-				
-					\foreach \x in {0,...,\xmax}{
-					\foreach \y in {0,...,\ymax}{
-						
-							\ifnum\y=0
-							\def\bottom{0}
-							\else
-							\pgfmathrandomitem{\bottom}{inout}%
-							\fi	
-						
-							\ifnum\x=\xmax
-							\def\right{0}
-							\else
-							\pgfmathrandomitem{\right}{inout}%
-							\fi
-						
-							\begin{scope}[xshift=\x cm, yshift=\y cm]
-								\piece{\bottom}{\right}
-							\end{scope}
-						}
-					}
-				
-					\draw (0,0) -- (0,\ymax+1) -- (\xmax+1,\ymax+1);
-				
-				\end{tikzpicture}
-			\end{minipage}
-		
-		\vspace*{\fill}
-		\centering
-		\fboxrule=2pt{
-			\fbox
-			{
-				\begin{minipage}{0.95\linewidth}
-					\centering
-					Mengaroni Ferruccio - Medusa.
-				\end{minipage}
-		}}
-		\newpage
+			
 		
 		\begin{minipage}{\linewidth}
 			\centering
