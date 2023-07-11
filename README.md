@@ -16,4 +16,4 @@ Guida per spiegare le Opere dei Musei Civici ai Bambini.
 ---
 
 # To-Do
-- Sistemare layout documento ingrandito.
+- Continuare ottimizzazione codice del documento dei puzzle.
