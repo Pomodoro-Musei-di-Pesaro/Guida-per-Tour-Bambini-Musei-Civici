@@ -6,9 +6,26 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
-      - name: Compile LaTeX document
+        with:
+          sparse-checkout: .
+      - name: Compila i file del Laboratorio Creativo
         uses: xu-cheng/latex-action@v2
         with: # insert here files to compile
-          root_file: |
-            Children_Creative_Labs/Coloring_Artworks.tex
+          root_file: "Children_Creative_Labs/*.tex"
+          glob_root_file: true
+      - name: Compila il file del Laboratorio
+        uses: xu-cheng/latex-action@v2
+        with: # insert here files to compile
+          root_file: "Children_Labs/*.tex"
+          glob_root_file: true
+      - name: Compila i file della Guida
+        uses: xu-cheng/latex-action@v2
+        with: # insert here files to compile
+          root_file: "Guide/*.tex"
+          glob_root_file: true
+      - name: Compila il file delle Slide
+        uses: xu-cheng/latex-action@v2
+        with: # insert here files to compile
+          root_file: "Guide_Slides/*.tex"
+          glob_root_file: true
       - run: echo "Tutto Okay :)"
