@@ -10,5 +10,5 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with: # insert here files to compile
           root_file: |
-            Guide_Slides/Guided_Tour_For_Children_Slides.tex
+            Children_Creative_Labs/Coloring_Artworks.tex
       - run: echo "Tutto Okay :)"
