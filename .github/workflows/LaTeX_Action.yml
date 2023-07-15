@@ -1,4 +1,4 @@
-name: Build LaTeX documents # Action name
+name: Test Compilazione # Action name
 on: [push]
 jobs:
   build_latex:
