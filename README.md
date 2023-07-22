@@ -8,6 +8,11 @@ Guida per spiegare le Opere dei Musei Civici ai Bambini.
 
 ---
 
+# In caso di nessuna Release
+- Scarica i [documenti](https://nightly.link/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/workflows/LaTeX_Action/main/Tour%20Bambini%20Musei%20Civici.zip) dimostrativi.
+
+---
+
 # License
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
