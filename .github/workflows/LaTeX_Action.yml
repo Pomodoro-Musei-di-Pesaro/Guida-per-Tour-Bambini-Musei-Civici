@@ -32,17 +32,26 @@ jobs:
         with: # insert here files to compile
           working_directory: Children_Labs
           root_file: Test.tex
+      - name: Ridenominazione files
+        run: |
+          mv Guide/Guided_Tour_For_Children.pdf Guide/Guida_per_Tour_Bambini_Musei_Civici.pdf
+          mv Guide/Guided_Tour_For_Children_Enlarged.pdf Guide/Guida_per_Tour_Bambini_Musei_Civici-Ingrandita.pdf
+          mv Guide_Slides/Guided_Tour_For_Children_Slides.pdf Guide_Slides/Slides-Guida_per_Tour_Bambini_Musei_Civici.pdf
+          mv Children_Creative_Labs/Coloring_Artworks.pdf Children_Creative_Labs/Laboratorio_Creativo-Colora_le_Opere.pdf
+          mv Children_Creative_Labs/Find_The_Artworks.pdf Children_Creative_Labs/Laboratorio_Creativo-Trova_le_Opere.pdf
+          mv Children_Creative_Labs/Link_Description_To_Images.pdf Children_Creative_Labs/Laboratorio_Creativo-Collega_le_Descrizioni_alle_Immagini.pdf
+          mv Children_Creative_Labs/Puzzles_About_Artworks.pdf Children_Creative_Labs/Laboratorio_Creativo-Puzzle_sulle_Opere.pdf
+          mv Children_Labs/Test.pdf Children_Labs/Laboratorio-Test.pdf
       - name: Caricamento della Release temporanea
         uses: actions/upload-artifact@v3
         with: 
           name: Tour Bambini Musei Civici
           path: |
-            Guide/Guided_Tour_For_Children.pdf
-            Guide/Guided_Tour_For_Children_Enlarged.pdf
-            Guide_Slides/Guided_Tour_For_Children_Slides.pdf
-            Children_Creative_Labs/Coloring_Artworks.pdf
-            Children_Creative_Labs/Find_The_Artworks.pdf
-            Children_Creative_Labs/Link_Description_To_Images.pdf
-            Children_Creative_Labs/Puzzles_About_Artworks.pdf
-            Children_Labs/Test.pdf
-          
+            Guide/Guida_per_Tour_Bambini_Musei_Civici.pdf
+            Guide/Guida_per_Tour_Bambini_Musei_Civici-Ingrandita.pdf
+            Guide_Slides/Slides-Guida_per_Tour_Bambini_Musei_Civici.pdf
+            Children_Creative_Labs/Laboratorio_Creativo-Colora_le_Opere.pdf
+            Children_Creative_Labs/Laboratorio_Creativo-Trova_le_Opere.pdf
+            Children_Creative_Labs/Laboratorio_Creativo-Collega_le_Descrizioni_alle_Immagini.pdf
+            Children_Creative_Labs/Laboratorio_Creativo-Puzzle_sulle_Opere.pdf
+            Children_Labs/Laboratorio-Test.pdf
