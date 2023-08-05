@@ -11,8 +11,8 @@ Guida per spiegare le Opere dei Musei Civici ai Bambini.
 ---
 
 # Analytics
-[![views](https://raw.githubusercontent.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/traffic/traffic-Guida-per-Tour-Bambini-Musei-Civici/views.svg)](https://github.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/tree/traffic#-Guida-per-Tour-Bambini-Musei-Civici)
-[![clones](https://raw.githubusercontent.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/traffic/traffic-Guida-per-Tour-Bambini-Musei-Civici/clones.svg)](https://github.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/tree/traffic#-Guida-per-Tour-Bambini-Musei-Civici)
+[![views](https://raw.githubusercontent.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/traffic/traffic-Guida-per-Tour-Bambini-Musei-Civici/views.svg)](https://github.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici)
+[![clones](https://raw.githubusercontent.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/traffic/traffic-Guida-per-Tour-Bambini-Musei-Civici/clones.svg)](https://github.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici)
 [![Github all releases](https://img.shields.io/github/downloads/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/total.svg)](https://GitHub.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/releases/)
 
 
