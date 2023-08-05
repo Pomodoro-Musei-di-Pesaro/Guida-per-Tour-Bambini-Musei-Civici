@@ -1,5 +1,8 @@
 name: Test Compilazione # Action name
-on: [push]
+on:
+  push:
+    branches:
+      - 'main'
 jobs:
   build_latex:
     runs-on: ubuntu-latest
