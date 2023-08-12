@@ -6,6 +6,7 @@ Guida per spiegare le Opere dei Musei Civici ai Bambini.
 ---
 
 # Status
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/6bd081e10fa044f28f6f18ea97f8cdcc)](https://app.codacy.com/gh/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Test Compilazione](https://github.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/actions/workflows/LaTeX_Action.yml/badge.svg?branch=main&event=push)](https://github.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/actions/workflows/LaTeX_Action.yml)
 
 ---
