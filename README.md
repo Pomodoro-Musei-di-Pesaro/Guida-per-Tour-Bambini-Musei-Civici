@@ -51,5 +51,5 @@ This work is licensed under a
 ---
 
 # Authors
-- Alice Balestieri
-- Francesco Rombaldoni
+-   Alice Balestieri
+-   Francesco Rombaldoni
