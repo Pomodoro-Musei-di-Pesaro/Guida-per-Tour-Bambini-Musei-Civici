@@ -53,3 +53,7 @@ This work is licensed under a
 # Authors
 -   Alice Balestieri
 -   Francesco Rombaldoni
+
+# Contributors
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
