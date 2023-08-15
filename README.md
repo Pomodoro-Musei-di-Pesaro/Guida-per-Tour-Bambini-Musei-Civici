@@ -56,4 +56,21 @@ This work is licensed under a
 
 # Contributors
 <!-- readme: collaborators,contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/R0mb0">
+            <img src="https://avatars.githubusercontent.com/u/72658034?v=4" width="100;" alt="R0mb0"/>
+            <br />
+            <sub><b>Francesco Rombaldoni</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/r0s4dip3sar0">
+            <img src="https://avatars.githubusercontent.com/u/130976709?v=4" width="100;" alt="r0s4dip3sar0"/>
+            <br />
+            <sub><b>Alice Balestieri</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: collaborators,contributors -end -->
