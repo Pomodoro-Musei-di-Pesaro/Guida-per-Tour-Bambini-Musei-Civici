@@ -4,7 +4,7 @@ on:
         branches:
             - main
     schedule:
-    - cron: '1 0 * * *' #UTC
+        - cron: '1 0 * * *' #UTC
 jobs:
     contrib-readme-job:
         runs-on: ubuntu-latest
