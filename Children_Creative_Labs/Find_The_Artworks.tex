@@ -22,6 +22,9 @@
 % Adjust image dim.
 \usepackage{adjustbox}
 
+% Minipages in the same line
+\usepackage{tabularx}
+
 % License
 \usepackage[
 type={CC},
@@ -36,183 +39,261 @@ version={4.0},
 %---------- Begin page ----------
 \begin{adjustwidth}{-30mm}{-30mm}
 	
-	% Superior section
-	\begin{minipage}{\linewidth}
-		\fbox{
-			\begin{minipage} [l] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
-				\medskip
-				\centering
-				\begin{tikzpicture}
-					\node[anchor=south west,inner sep=0] (image) at (0,0) {#1};
-					\begin{scope}[x={(image.south east)},y={(image.north west)}]
-						\draw[draw=none,fill=white] (0,0) rectangle (0.21,0.31);
-						\draw[draw=none,fill=white] (0.2,0) rectangle (0.51,0.11);
-						\draw[draw=none,fill=white] (0,0.3) rectangle (0.11,0.41);
-						\draw[draw=none,fill=white] (0.4,0.1) rectangle (0.51,0.31);
-						\draw[draw=none,fill=white] (0.5,0.1) rectangle (0.91,0.21);
-						\draw[draw=none,fill=white] (0.7,0) rectangle (0.81,0.51);
-						\draw[draw=none,fill=white] (0.6,0.2) rectangle (0.71,0.31);
-						\draw[draw=none,fill=white] (0.3,0.2) rectangle (0.41,0.51);
-						\draw[draw=none,fill=white] (0.5,0.3) rectangle (0.61,0.41);
-						\draw[draw=none,fill=white] (0.9,0.3) rectangle (1.01,0.61);
-						\draw[draw=none,fill=white] (0,0.6) rectangle (0.91,0.71);
-						\draw[draw=none,fill=white] (0.1,0.5) rectangle (0.21,0.81);
-						\draw[draw=none,fill=white] (0.2,0.5) rectangle (0.31,1);
-						\draw[draw=none,fill=white] (0.4,0.4) rectangle (0.51,1);
-						\draw[draw=none,fill=white] (0,0.9) rectangle (1.01,1);
-						\draw[draw=none,fill=white] (0,0.8) rectangle (0.11,0.91);
-						\draw[draw=none,fill=white] (0.3,0.7) rectangle (0.41,0.91);
-						\draw[draw=none,fill=white] (0.5,0.5) rectangle (0.61,0.61);
-						\draw[draw=none,fill=white] (0.6,0.4) rectangle (0.71,0.61);
-						\draw[draw=none,fill=white] (0.8,0.5) rectangle (0.91,0.91);
-						\draw[draw=none,fill=white] (0.6,0.8) rectangle (1.01,0.91);
-					\end{scope}
-				\end{tikzpicture}
-				
-				\vspace*{\fill}
-				\fboxrule=4pt{
-					\framebox[\textwidth]{\rule{0pt}{55pt}}}
-				
-			\end{minipage}
-		}%
-		\hfill{
-			\fbox{
-				\begin{minipage} [l] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
-					\medskip
-					\centering
-					\begin{tikzpicture}
-						\node[anchor=south west,inner sep=0] (image) at (0,0) {#1};
-						\begin{scope}[x={(image.south east)},y={(image.north west)}]
-							\draw[draw=none,fill=white] (0.1,0.3) rectangle (0.71,0.51);
-							\draw[draw=none,fill=white] (0,0.1) rectangle (0.81,0.21);
-							\draw[draw=none,fill=white] (0.1,0.3) rectangle (0.71,0.51);
-							\draw[draw=none,fill=white] (0,0) rectangle (0.11,0.31);
-							\draw[draw=none,fill=white] (0.1,0.1) rectangle (0.21,0.31);
-							\draw[draw=none,fill=white] (0.2,0) rectangle (0.31,0.21);
-							\draw[draw=none,fill=white] (0.3,0) rectangle (0.41,0.61);
-							\draw[draw=none,fill=white] (0.5,0) rectangle (0.61,0.21);
-							\draw[draw=none,fill=white] (0.6,0.1) rectangle (0.71,1);
-							\draw[draw=none,fill=white] (0.1,0.3) rectangle (0.71,0.51);
-							\draw[draw=none,fill=white] (0.7,0) rectangle (0.81,0.11);
-							\draw[draw=none,fill=white] (0.9,0.1) rectangle (1.01,0.21);
-							\draw[draw=none,fill=white] (0.8,0.3) rectangle (0.91,1);
-							\draw[draw=none,fill=white] (0,0.4) rectangle (1.01,0.51);
-							\draw[draw=none,fill=white] (0,0.4) rectangle (0.11,0.71);
-							\draw[draw=none,fill=white] (0.5,0.3) rectangle (0.61,0.61);
-							\draw[draw=none,fill=white] (0.6,0.6) rectangle (1.01,0.71);
-							\draw[draw=none,fill=white] (0.6,0.8) rectangle (1.01,1);
-							\draw[draw=none,fill=white] (0,0.6) rectangle (0.31,0.71);
-							\draw[draw=none,fill=white] (0.1,0.7) rectangle (0.41,0.81);
-							\draw[draw=none,fill=white] (0.4,0.6) rectangle (0.51,0.71);
-							\draw[draw=none,fill=white] (0.5,0.7) rectangle (0.71,0.81);
-							\draw[draw=none,fill=white] (0,0.8) rectangle (0.11,1);
-							\draw[draw=none,fill=white] (0,0.9) rectangle (0.41,1);
-							\draw[draw=none,fill=white] (0.3,0.8) rectangle (0.51,0.91);
-							\draw[draw=none,fill=white] (0.5,0.9) rectangle (0.81,1);
-						\end{scope}
-					\end{tikzpicture}
-					
-					\vspace*{\fill}
-					\fboxrule=4pt{
-						\framebox[\textwidth]{\rule{0pt}{55pt}}}
-					
-				\end{minipage}
-			}%
+	% Top section
+		\begin{tabularx}{\textwidth}{XX}
+		{
+			\begin{tikzpicture}
+				\node[draw,dashed]
+				{
+					\fboxrule=0pt{
+						\setlength{\fboxsep}{0pt}\fbox{
+							
+							% Minipage "container"
+							\begin{minipage}[t][8.3cm][t]{8.9cm}
+								\vspace*{-1mm}
+								\fbox{
+									\begin{minipage} [l] [\dimexpr \linewidth \relax] [t] {\dimexpr 0.95\linewidth \relax}
+										\medskip
+										\centering
+										\begin{tikzpicture}
+											\node[anchor=south west,inner sep=0] (image) at (0,0) {#1};
+											\begin{scope}[x={(image.south east)},y={(image.north west)}]
+												\draw[draw=none,fill=white] (0,0) rectangle (0.21,0.31);
+												\draw[draw=none,fill=white] (0.2,0) rectangle (0.51,0.11);
+												\draw[draw=none,fill=white] (0,0.3) rectangle (0.11,0.41);
+												\draw[draw=none,fill=white] (0.4,0.1) rectangle (0.51,0.31);
+												\draw[draw=none,fill=white] (0.5,0.1) rectangle (0.91,0.21);
+												\draw[draw=none,fill=white] (0.7,0) rectangle (0.81,0.51);
+												\draw[draw=none,fill=white] (0.6,0.2) rectangle (0.71,0.31);
+												\draw[draw=none,fill=white] (0.3,0.2) rectangle (0.41,0.51);
+												\draw[draw=none,fill=white] (0.5,0.3) rectangle (0.61,0.41);
+												\draw[draw=none,fill=white] (0.9,0.3) rectangle (1.01,0.61);
+												\draw[draw=none,fill=white] (0,0.6) rectangle (0.91,0.71);
+												\draw[draw=none,fill=white] (0.1,0.5) rectangle (0.21,0.81);
+												\draw[draw=none,fill=white] (0.2,0.5) rectangle (0.31,1);
+												\draw[draw=none,fill=white] (0.4,0.4) rectangle (0.51,1);
+												\draw[draw=none,fill=white] (0,0.9) rectangle (1.01,1);
+												\draw[draw=none,fill=white] (0,0.8) rectangle (0.11,0.91);
+												\draw[draw=none,fill=white] (0.3,0.7) rectangle (0.41,0.91);
+												\draw[draw=none,fill=white] (0.5,0.5) rectangle (0.61,0.61);
+												\draw[draw=none,fill=white] (0.6,0.4) rectangle (0.71,0.61);
+												\draw[draw=none,fill=white] (0.8,0.5) rectangle (0.91,0.91);
+												\draw[draw=none,fill=white] (0.6,0.8) rectangle (1.01,0.91);
+											\end{scope}
+										\end{tikzpicture}
+										
+									\end{minipage}
+									
+								}
+								
+								\vspace*{-2.8cm}
+								
+								\fboxrule=4pt{
+									\framebox[\textwidth]{\rule{0pt}{55pt}}}
+								
+							\end{minipage}
+							
+						}
+					}
+				};
+			\end{tikzpicture}
+			
+		}&{
+		
+			\hspace*{3.cm}
+			\begin{tikzpicture}
+				\node[draw,dashed]
+				{
+					\fboxrule=0pt{
+						\setlength{\fboxsep}{0pt}\fbox{
+						
+							% Minipage "container"
+							\begin{minipage}[t][8.3cm][t]{8.9cm}
+								\vspace*{-1mm}
+								\fbox{
+									\begin{minipage} [l] [\dimexpr \linewidth \relax] [t] {\dimexpr 0.95\linewidth \relax}
+										\medskip
+										\centering
+										\begin{tikzpicture}
+											\node[anchor=south west,inner sep=0] (image) at (0,0) {#1};
+											\begin{scope}[x={(image.south east)},y={(image.north west)}]
+												\draw[draw=none,fill=white] (0.1,0.3) rectangle (0.71,0.51);
+												\draw[draw=none,fill=white] (0,0.1) rectangle (0.81,0.21);
+												\draw[draw=none,fill=white] (0.1,0.3) rectangle (0.71,0.51);
+												\draw[draw=none,fill=white] (0,0) rectangle (0.11,0.31);
+												\draw[draw=none,fill=white] (0.1,0.1) rectangle (0.21,0.31);
+												\draw[draw=none,fill=white] (0.2,0) rectangle (0.31,0.21);
+												\draw[draw=none,fill=white] (0.3,0) rectangle (0.41,0.61);
+												\draw[draw=none,fill=white] (0.5,0) rectangle (0.61,0.21);
+												\draw[draw=none,fill=white] (0.6,0.1) rectangle (0.71,1);
+												\draw[draw=none,fill=white] (0.1,0.3) rectangle (0.71,0.51);
+												\draw[draw=none,fill=white] (0.7,0) rectangle (0.81,0.11);
+												\draw[draw=none,fill=white] (0.9,0.1) rectangle (1.01,0.21);
+												\draw[draw=none,fill=white] (0.8,0.3) rectangle (0.91,1);
+												\draw[draw=none,fill=white] (0,0.4) rectangle (1.01,0.51);
+												\draw[draw=none,fill=white] (0,0.4) rectangle (0.11,0.71);
+												\draw[draw=none,fill=white] (0.5,0.3) rectangle (0.61,0.61);
+												\draw[draw=none,fill=white] (0.6,0.6) rectangle (1.01,0.71);
+												\draw[draw=none,fill=white] (0.6,0.8) rectangle (1.01,1);
+												\draw[draw=none,fill=white] (0,0.6) rectangle (0.31,0.71);
+												\draw[draw=none,fill=white] (0.1,0.7) rectangle (0.41,0.81);
+												\draw[draw=none,fill=white] (0.4,0.6) rectangle (0.51,0.71);
+												\draw[draw=none,fill=white] (0.5,0.7) rectangle (0.71,0.81);
+												\draw[draw=none,fill=white] (0,0.8) rectangle (0.11,1);
+												\draw[draw=none,fill=white] (0,0.9) rectangle (0.41,1);
+												\draw[draw=none,fill=white] (0.3,0.8) rectangle (0.51,0.91);
+												\draw[draw=none,fill=white] (0.5,0.9) rectangle (0.81,1);
+											\end{scope}
+										\end{tikzpicture}
+									
+									\end{minipage}
+									
+								}
+							
+								\vspace*{-2.8cm}
+							
+								\fboxrule=4pt{
+									\framebox[\textwidth]{\rule{0pt}{55pt}}}
+							
+							\end{minipage}
+						
+						}
+					}
+				};
+			\end{tikzpicture}
 		}
-	\end{minipage}
-	
-	\vspace{4mm}
-	
-	%--- Bottom section
-	\begin{minipage}{\linewidth}
-		\fbox{
-			\begin{minipage} [l] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
-				\medskip
-				\centering
-				\begin{tikzpicture}
-					\node[anchor=south west,inner sep=0] (image) at (0,0) {#1};
-					\begin{scope}[x={(image.south east)},y={(image.north west)}]
-						\draw[draw=none,fill=white] (0,0) rectangle (0.51,0.21);
-						\draw[draw=none,fill=white] (0.4,0.1) rectangle (0.81,0.21);
-						\draw[draw=none,fill=white] (0.2,0) rectangle (0.31,0.31);
-						\draw[draw=none,fill=white] (0.3,0) rectangle (0.41,0.41);
-						\draw[draw=none,fill=white] (0.5,0.1) rectangle (0.61,0.31);
-						\draw[draw=none,fill=white] (0.5,0.1) rectangle (0.61,0.31);
-						\draw[draw=none,fill=white] (0.6,0) rectangle (0.71,0.21);
-						\draw[draw=none,fill=white] (0.8,0) rectangle (1.01,0.11);
-						\draw[draw=none,fill=white] (0.9,0) rectangle (1.01,0.21);
-						\draw[draw=none,fill=white] (0,0.3) rectangle (0.31,0.41);
-						\draw[draw=none,fill=white] (0.1,0.4) rectangle (0.31,0.61);
-						\draw[draw=none,fill=white] (0,0.5) rectangle (0.41,0.61);
-						\draw[draw=none,fill=white] (0.4,0.3) rectangle (0.51,0.51);
-						\draw[draw=none,fill=white] (0.4,0.4) rectangle (0.61,0.51);
-						\draw[draw=none,fill=white] (0.6,0.3) rectangle (1.01,0.41);
-						\draw[draw=none,fill=white] (0.5,0.5) rectangle (0.81,0.91);
-						\draw[draw=none,fill=white] (0.7,0.3) rectangle (0.81,0.61);
-						\draw[draw=none,fill=white] (0.7,0.5) rectangle (1.01,0.61);
-						\draw[draw=none,fill=white] (0.9,0.5) rectangle (1.01,0.71);
-						\draw[draw=none,fill=white] (0,0.7) rectangle (0.11,0.91);
-						\draw[draw=none,fill=white] (0.2,0.7) rectangle (0.41,1);
-						\draw[draw=none,fill=white] (0.1,0.9) rectangle (0.31,1);
-						\draw[draw=none,fill=white] (0.3,0.6) rectangle (0.51,0.71);
-						\draw[draw=none,fill=white] (0.4,0.6) rectangle (0.51,0.81);
-						\draw[draw=none,fill=white] (0.5,0.9) rectangle (0.71,1);
-						\draw[draw=none,fill=white] (0.8,0.7) rectangle (0.91,1);
-						\draw[draw=none,fill=white] (0.8,0.8) rectangle (1.01,0.91);
-					\end{scope}
-				\end{tikzpicture}
-				
-				\vspace*{\fill}
-				\fboxrule=4pt{
-					\framebox[\textwidth]{\rule{0pt}{55pt}}}
-				
-			\end{minipage}
-		}%
-		%
-		\hfill{
-			\fbox{
-				\begin{minipage} [l] [\dimexpr 0.430\textwidth \relax] [t] {\dimexpr .460\textwidth \relax}
-					\medskip
-					\centering
-					\begin{tikzpicture}
-						\node[anchor=south west,inner sep=0] (image) at (0,0) {#1};
-						\begin{scope}[x={(image.south east)},y={(image.north west)}]
-							\draw[draw=none,fill=white] (0,0) rectangle (0.11,0.41);
-							\draw[draw=none,fill=white] (0,0.1) rectangle (0.21,0.21);
-							\draw[draw=none,fill=white] (0.3,0) rectangle (0.41,0.41);
-							\draw[draw=none,fill=white] (0.2,0) rectangle (0.41,0.11);
-							\draw[draw=none,fill=white] (0.3,0.1) rectangle (0.51,0.21);
-							\draw[draw=none,fill=white] (0.5,0) rectangle (0.71,0.11);
-							\draw[draw=none,fill=white] (0.8,0) rectangle (1.01,0.21);
-							\draw[draw=none,fill=white] (0.9,0) rectangle (1.01,0.41);
-							\draw[draw=none,fill=white] (0.8,0.3) rectangle (0.91,1);
-							\draw[draw=none,fill=white] (0.7,0.2) rectangle (0.81,0.31);
-							\draw[draw=none,fill=white] (0.2,0.2) rectangle (0.31,0.81);
-							\draw[draw=none,fill=white] (0.1,0.3) rectangle (0.31,0.51);
-							\draw[draw=none,fill=white] (0.5,0.3) rectangle (0.61,0.91);
-							\draw[draw=none,fill=white] (0.5,0.3) rectangle (0.71,0.51);
-							\draw[draw=none,fill=white] (0.4,0.4) rectangle (0.81,0.51);
-							\draw[draw=none,fill=white] (0,0.5) rectangle (0.11,1);
-							\draw[draw=none,fill=white] (0,0.7) rectangle (0.21,0.91);
-							\draw[draw=none,fill=white] (0.2,0.6) rectangle (0.61,0.81);
-							\draw[draw=none,fill=white] (0.2,0.5) rectangle (0.41,0.61);
-							\draw[draw=none,fill=white] (0.5,0.6) rectangle (0.71,0.71);
-							\draw[draw=none,fill=white] (0.2,0.9) rectangle (0.51,1);
-							\draw[draw=none,fill=white] (0.4,0.7) rectangle (0.51,1);
-							\draw[draw=none,fill=white] (0.7,0.5) rectangle (1.01,0.61);
-							\draw[draw=none,fill=white] (0.7,0.7) rectangle (1.01,0.91);
-							\draw[draw=none,fill=white] (0.6,0.9) rectangle (0.91,1);
-						\end{scope}
-					\end{tikzpicture}
-					
-					\vspace*{\fill}
-					\fboxrule=4pt{
-						\framebox[\textwidth]{\rule{0pt}{55pt}}}
-					
-				\end{minipage}
-			}%
+		\end{tabularx}
+		
+	% Bottom section
+			\begin{tabularx}{\textwidth}{XX}
+		{
+			\begin{tikzpicture}
+				\node[draw,dashed]
+				{
+					\fboxrule=0pt{
+						\setlength{\fboxsep}{0pt}\fbox{
+							
+							% Minipage "container"
+							\begin{minipage}[t][8.3cm][t]{8.9cm}
+								\vspace*{-1mm}
+								\fbox{
+									\begin{minipage} [l] [\dimexpr \linewidth \relax] [t] {\dimexpr 0.95\linewidth \relax}
+										\medskip
+										\centering
+										\begin{tikzpicture}
+											\node[anchor=south west,inner sep=0] (image) at (0,0) {#1};
+											\begin{scope}[x={(image.south east)},y={(image.north west)}]
+												\draw[draw=none,fill=white] (0,0) rectangle (0.51,0.21);
+												\draw[draw=none,fill=white] (0.4,0.1) rectangle (0.81,0.21);
+												\draw[draw=none,fill=white] (0.2,0) rectangle (0.31,0.31);
+												\draw[draw=none,fill=white] (0.3,0) rectangle (0.41,0.41);
+												\draw[draw=none,fill=white] (0.5,0.1) rectangle (0.61,0.31);
+												\draw[draw=none,fill=white] (0.5,0.1) rectangle (0.61,0.31);
+												\draw[draw=none,fill=white] (0.6,0) rectangle (0.71,0.21);
+												\draw[draw=none,fill=white] (0.8,0) rectangle (1.01,0.11);
+												\draw[draw=none,fill=white] (0.9,0) rectangle (1.01,0.21);
+												\draw[draw=none,fill=white] (0,0.3) rectangle (0.31,0.41);
+												\draw[draw=none,fill=white] (0.1,0.4) rectangle (0.31,0.61);
+												\draw[draw=none,fill=white] (0,0.5) rectangle (0.41,0.61);
+												\draw[draw=none,fill=white] (0.4,0.3) rectangle (0.51,0.51);
+												\draw[draw=none,fill=white] (0.4,0.4) rectangle (0.61,0.51);
+												\draw[draw=none,fill=white] (0.6,0.3) rectangle (1.01,0.41);
+												\draw[draw=none,fill=white] (0.5,0.5) rectangle (0.81,0.91);
+												\draw[draw=none,fill=white] (0.7,0.3) rectangle (0.81,0.61);
+												\draw[draw=none,fill=white] (0.7,0.5) rectangle (1.01,0.61);
+												\draw[draw=none,fill=white] (0.9,0.5) rectangle (1.01,0.71);
+												\draw[draw=none,fill=white] (0,0.7) rectangle (0.11,0.91);
+												\draw[draw=none,fill=white] (0.2,0.7) rectangle (0.41,1);
+												\draw[draw=none,fill=white] (0.1,0.9) rectangle (0.31,1);
+												\draw[draw=none,fill=white] (0.3,0.6) rectangle (0.51,0.71);
+												\draw[draw=none,fill=white] (0.4,0.6) rectangle (0.51,0.81);
+												\draw[draw=none,fill=white] (0.5,0.9) rectangle (0.71,1);
+												\draw[draw=none,fill=white] (0.8,0.7) rectangle (0.91,1);
+												\draw[draw=none,fill=white] (0.8,0.8) rectangle (1.01,0.91);
+											\end{scope}
+										\end{tikzpicture}
+										
+									\end{minipage}
+									
+								}
+								
+								\vspace*{-2.8cm}
+								
+								\fboxrule=4pt{
+									\framebox[\textwidth]{\rule{0pt}{55pt}}}
+								
+							\end{minipage}
+							
+						}
+					}
+				};
+			\end{tikzpicture}
+			
+		}&{
+			
+			\hspace*{3.cm}
+			\begin{tikzpicture}
+				\node[draw,dashed]
+				{
+					\fboxrule=0pt{
+						\setlength{\fboxsep}{0pt}\fbox{
+							
+							% Minipage "container"
+							\begin{minipage}[t][8.3cm][t]{8.9cm}
+								\vspace*{-1mm}
+								\fbox{
+									\begin{minipage} [l] [\dimexpr \linewidth \relax] [t] {\dimexpr 0.95\linewidth \relax}
+										\medskip
+										\centering
+										\begin{tikzpicture}
+											\node[anchor=south west,inner sep=0] (image) at (0,0) {#1};
+											\begin{scope}[x={(image.south east)},y={(image.north west)}]
+												\draw[draw=none,fill=white] (0,0) rectangle (0.11,0.41);
+												\draw[draw=none,fill=white] (0,0.1) rectangle (0.21,0.21);
+												\draw[draw=none,fill=white] (0.3,0) rectangle (0.41,0.41);
+												\draw[draw=none,fill=white] (0.2,0) rectangle (0.41,0.11);
+												\draw[draw=none,fill=white] (0.3,0.1) rectangle (0.51,0.21);
+												\draw[draw=none,fill=white] (0.5,0) rectangle (0.71,0.11);
+												\draw[draw=none,fill=white] (0.8,0) rectangle (1.01,0.21);
+												\draw[draw=none,fill=white] (0.9,0) rectangle (1.01,0.41);
+												\draw[draw=none,fill=white] (0.8,0.3) rectangle (0.91,1);
+												\draw[draw=none,fill=white] (0.7,0.2) rectangle (0.81,0.31);
+												\draw[draw=none,fill=white] (0.2,0.2) rectangle (0.31,0.81);
+												\draw[draw=none,fill=white] (0.1,0.3) rectangle (0.31,0.51);
+												\draw[draw=none,fill=white] (0.5,0.3) rectangle (0.61,0.91);
+												\draw[draw=none,fill=white] (0.5,0.3) rectangle (0.71,0.51);
+												\draw[draw=none,fill=white] (0.4,0.4) rectangle (0.81,0.51);
+												\draw[draw=none,fill=white] (0,0.5) rectangle (0.11,1);
+												\draw[draw=none,fill=white] (0,0.7) rectangle (0.21,0.91);
+												\draw[draw=none,fill=white] (0.2,0.6) rectangle (0.61,0.81);
+												\draw[draw=none,fill=white] (0.2,0.5) rectangle (0.41,0.61);
+												\draw[draw=none,fill=white] (0.5,0.6) rectangle (0.71,0.71);
+												\draw[draw=none,fill=white] (0.2,0.9) rectangle (0.51,1);
+												\draw[draw=none,fill=white] (0.4,0.7) rectangle (0.51,1);
+												\draw[draw=none,fill=white] (0.7,0.5) rectangle (1.01,0.61);
+												\draw[draw=none,fill=white] (0.7,0.7) rectangle (1.01,0.91);
+												\draw[draw=none,fill=white] (0.6,0.9) rectangle (0.91,1);
+											\end{scope}
+										\end{tikzpicture}
+										
+									\end{minipage}
+									
+								}
+								
+								\vspace*{-2.8cm}
+								
+								\fboxrule=4pt{
+									\framebox[\textwidth]{\rule{0pt}{55pt}}}
+								
+							\end{minipage}
+							
+						}
+					}
+				};
+			\end{tikzpicture}
 		}
-	\end{minipage}
+	\end{tabularx}
+		
 \end{adjustwidth}
 
 \vspace*{\fill}
