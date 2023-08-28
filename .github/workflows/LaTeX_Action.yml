@@ -10,19 +10,19 @@ jobs:
       - name: Download file della Repo
         uses: actions/checkout@v3
       - name: Compilazione della guida
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with: # insert here files to compile
           working_directory: Guide
           root_file: |
                   Guided_Tour_For_Children.tex
                   Guided_Tour_For_Children_Enlarged.tex
       - name: Compilazione delle slide
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with: # insert here files to compile
           working_directory: Guide_Slides
           root_file: Guided_Tour_For_Children_Slides.tex
       - name: Compilazione del Laboratorio Creativo
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with: # insert here files to compile
           working_directory: Children_Creative_Labs
           root_file: |
@@ -31,7 +31,7 @@ jobs:
                   Link_Description_To_Images.tex
                   Puzzles_About_Artworks.tex
       - name: Compilazione del Laboratorio
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with: # insert here files to compile
           working_directory: Children_Labs
           root_file: Test.tex
