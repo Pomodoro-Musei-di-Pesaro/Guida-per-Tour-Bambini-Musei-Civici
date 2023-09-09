@@ -1,8 +1,6 @@
 cff-version: 1.2.0
 message: "If you use these materials, please cite them as below."
 authors:
-- family-names: "Balestieri"
-  given-names: "Alice"
 - family-names: "Rombaldoni"
   given-names: "Francesco"
 title: "Guida-per-Tour-Bambini-Musei-Civici"
