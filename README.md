@@ -1,5 +1,5 @@
 # Guida per il tour dei bambini presso i musei Civici di Pesaro
-Guida per spiegare le Opere dei Musei Civici ai Bambini.
+Guida per spiegare le Opere dei Musei Civici ai bambini.
 
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 
