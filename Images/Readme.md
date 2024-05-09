@@ -15,7 +15,6 @@ License: © Comune di Pesaro
 > License: Public Domain
 
 
-
 > ### [Detail: S. Giorgio e il Drago.](https://commons.wikimedia.org/wiki/File:Bellini,_pala_di_pesaro_03_predella.JPG?uselang=it)
 > 
 > License: [Creative Commons, Attribution-Share Alike 3.0 Unported.](https://creativecommons.org/licenses/by-sa/3.0/deed.en)
