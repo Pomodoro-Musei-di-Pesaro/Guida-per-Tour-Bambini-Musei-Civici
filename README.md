@@ -31,7 +31,6 @@ Guida per spiegare le Opere dei Musei Civici ai bambini.
 [![GitHub forks](https://badgen.net/github/forks/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/)](https://GitHub.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/network/)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici.svg)](https://GitHub.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/pull/)
 
-
 ---
 
 ## In caso di nessuna Release
