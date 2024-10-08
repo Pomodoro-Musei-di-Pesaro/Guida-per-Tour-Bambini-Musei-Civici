@@ -3,6 +3,8 @@
 Guida per spiegare le Opere dei Musei Civici ai bambini.
 
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici)
+[![Donate](https://img.shields.io/badge/PayPal-Donate%20to%20Author-blue.svg)](http://paypal.me/R0mb0)
 
 ---
 
@@ -10,6 +12,7 @@ Guida per spiegare le Opere dei Musei Civici ai bambini.
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6bd081e10fa044f28f6f18ea97f8cdcc)](https://app.codacy.com/gh/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Test Compilazione](https://github.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/actions/workflows/LaTeX_Action.yml/badge.svg?branch=main&event=push)](https://github.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/actions/workflows/LaTeX_Action.yml)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici)
 
 ---
 
