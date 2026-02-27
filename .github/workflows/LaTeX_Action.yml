@@ -46,7 +46,7 @@ jobs:
           mv Children_Creative_Labs/Puzzles_About_Artworks.pdf Children_Creative_Labs/Laboratorio_Creativo-Puzzle_sulle_Opere.pdf
           mv Children_Labs/Test.pdf Children_Labs/Laboratorio-Test.pdf
       - name: Caricamento della Release temporanea
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with: 
           name: Tour Bambini Musei Civici
           path: |
