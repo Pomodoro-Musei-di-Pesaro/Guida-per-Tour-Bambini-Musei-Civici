@@ -2,19 +2,13 @@
   {
     "path": "/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/pulls",
     "title": "/pulls",
-    "count": 6,
-    "uniques": 6
-  },
-  {
-    "path": "/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici",
-    "title": "Overview",
     "count": 4,
     "uniques": 4
   },
   {
-    "path": "/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/issues",
-    "title": "/issues",
-    "count": 1,
-    "uniques": 1
+    "path": "/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici",
+    "title": "Overview",
+    "count": 2,
+    "uniques": 2
   }
 ]
