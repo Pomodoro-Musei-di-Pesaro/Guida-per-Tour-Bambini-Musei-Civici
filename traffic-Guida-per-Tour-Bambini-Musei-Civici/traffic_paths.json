@@ -2,14 +2,14 @@
   {
     "path": "/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/issues",
     "title": "/issues",
-    "count": 15,
-    "uniques": 15
+    "count": 13,
+    "uniques": 13
   },
   {
     "path": "/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/pulls",
     "title": "/pulls",
-    "count": 7,
-    "uniques": 7
+    "count": 6,
+    "uniques": 6
   },
   {
     "path": "/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/actions/workflows/LaTeX_Action.yml",
@@ -20,6 +20,12 @@
   {
     "path": "/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/blob/main/README.md",
     "title": "/blob/main/README.md",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/Pomodoro-Musei-di-Pesaro/Guida-per-Tour-Bambini-Musei-Civici/graphs/commit-activity",
+    "title": "/graphs/commit-activity",
     "count": 1,
     "uniques": 1
   }
